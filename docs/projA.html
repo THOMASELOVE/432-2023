@@ -231,7 +231,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </li>
   <li class="nav-item">
     <a class="nav-link" href="https://github.com/THOMASELOVE/432-data">
- <span class="menu-text">Data</span></a>
+ <span class="menu-text">Data and Code</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./packages.html">
+ <span class="menu-text">Packages</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -322,7 +326,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 5, 2023</p>
+      <p class="date">2023-01-05</p>
     </div>
   </div>
   
@@ -343,7 +347,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>All Project A work is to be submitted <a href="https://canvas.case.edu/">via Canvas</a>.</p>
 <section id="templates" class="level2">
 <h2 class="anchored" data-anchor-id="templates">Templates</h2>
-<p>On our <a href="https://github.com/THOMASELOVE/432-data">432-data page</a>, you will find (in the templates subfolder within the data folder) a pair of Quarto templates: <a href="https://raw.githubusercontent.com/THOMASELOVE/432-data/master/data/templates/projectAplan_template.qmd">one for the Project A Plan</a>, and <a href="https://raw.githubusercontent.com/THOMASELOVE/432-data/master/data/templates/projectAportfolio_template.qmd">another for the Project A Portfolio</a>. Please use these templates in preparing your work. They will make completing and grading Project A much easier.</p>
+<p>On our <a href="https://github.com/THOMASELOVE/432-data">432-data page</a>, you will find (in the templates subfolder) a pair of Quarto templates: <a href="https://raw.githubusercontent.com/THOMASELOVE/432-data/master/templates/projectAplan_template.qmd">one for the Project A Plan</a>, and <a href="https://raw.githubusercontent.com/THOMASELOVE/432-data/master/templates/projectAportfolio_template.qmd">another for the Project A Portfolio</a>. Please use these templates in preparing your work. They will make completing and grading Project A much easier.</p>
 </section>
 <section id="working-with-a-partner" class="level2">
 <h2 class="anchored" data-anchor-id="working-with-a-partner">Working with a Partner?</h2>
@@ -439,11 +443,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="r-packages-and-setup" class="level3">
 <h3 class="anchored" data-anchor-id="r-packages-and-setup">R Packages and Setup</h3>
-<p>You’ll load necessary packages at the start in an unnumbered section of your work, following the template.</p>
+<p>You’ll load necessary packages at the start in an unnumbered section of your work, following the <a href="#templates">template</a>.</p>
 <ul>
 <li>Do not use <code>source("Love-boost.R")</code> or any other R script or package unless you actually need something it provides.</li>
 <li>Do not load core elements of <code>tidyverse</code> or <code>tidymodels</code> separately. instead just load the meta-packages, and do so last.</li>
-<li>Use <code>#| message: false</code> as part of your Quarto code chunk where the packages are listed (as we have done in the template) to eliminate HTML messages about when packages were built or how objects were masked.</li>
+<li>Use <code>#| message: false</code> as part of your Quarto code chunk where the packages are listed (as we have done in the <a href="#templates">template</a>) to eliminate HTML messages about when packages were built or how objects were masked.</li>
 </ul>
 </section>
 <section id="data-source" class="level3">

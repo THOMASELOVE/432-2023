@@ -1,5 +1,6 @@
 ---
 title: "Calendar for 432: Spring 2023"
+date-modified: last-modified
 ---
 
 ## January 2023

@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2023-01-05">
 
-<title>432-2023 - Lab 4</title>
+<title>432-2023 - R Packages for 432</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -123,7 +123,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   }
 }</script>
 
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -234,7 +233,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
  <span class="menu-text">Data and Code</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./packages.html">
+    <a class="nav-link active" href="./packages.html" aria-current="page">
  <span class="menu-text">Packages</span></a>
   </li>  
 </ul>
@@ -266,13 +265,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#general-instructions" id="toc-general-instructions" class="nav-link active" data-scroll-target="#general-instructions">General Instructions</a></li>
-  <li><a href="#question-1.-10-points" id="toc-question-1.-10-points" class="nav-link" data-scroll-target="#question-1.-10-points">Question 1. (10 points)</a></li>
-  <li><a href="#question-2.-10-points" id="toc-question-2.-10-points" class="nav-link" data-scroll-target="#question-2.-10-points">Question 2. (10 points)</a></li>
-  <li><a href="#question-3.-10-points" id="toc-question-3.-10-points" class="nav-link" data-scroll-target="#question-3.-10-points">Question 3. (10 points)</a></li>
-  <li><a href="#question-4.-10-points" id="toc-question-4.-10-points" class="nav-link" data-scroll-target="#question-4.-10-points">Question 4. (10 points)</a></li>
-  <li><a href="#question-5.-10-points" id="toc-question-5.-10-points" class="nav-link" data-scroll-target="#question-5.-10-points">Question 5. (10 points)</a></li>
-  <li><a href="#session-information" id="toc-session-information" class="nav-link" data-scroll-target="#session-information">Session Information</a></li>
+  <li><a href="#r-packages-to-install" id="toc-r-packages-to-install" class="nav-link active" data-scroll-target="#r-packages-to-install">R Packages to Install</a></li>
+  <li><a href="#note-a-windows-issue" id="toc-note-a-windows-issue" class="nav-link" data-scroll-target="#note-a-windows-issue">Note: A Windows Issue</a></li>
+  <li><a href="#the-meta-packages" id="toc-the-meta-packages" class="nav-link" data-scroll-target="#the-meta-packages">The Meta-Packages</a></li>
+  <li><a href="#a-special-note-on-the-countreg-package" id="toc-a-special-note-on-the-countreg-package" class="nav-link" data-scroll-target="#a-special-note-on-the-countreg-package">A Special Note on the <code>countreg</code> package</a></li>
+  <li><a href="#installing-a-single-package" id="toc-installing-a-single-package" class="nav-link" data-scroll-target="#installing-a-single-package">Installing a Single Package</a></li>
   </ul>
 </nav>
     </div>
@@ -281,7 +278,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lab 4</h1>
+<h1 class="title">R Packages for 432</h1>
 </div>
 
 
@@ -302,133 +299,78 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<section id="general-instructions" class="level1">
-<h1>General Instructions</h1>
-<ul>
-<li>Submit your work via <a href="https://canvas.case.edu/">Canvas</a>.</li>
-<li>The deadline for this Lab is specified on the <a href="./calendar.html">Calendar</a>.
-<ul>
-<li>Work submitted late, but within 12 hours of the deadline will lose 5 of the available 50 points.</li>
-<li>Work submitted more than 12 hours after the deadline will lose 10 of the available 50 points.</li>
-</ul></li>
-</ul>
-<p>Your response should include a Quarto file (.qmd) and an HTML document that is the result of applying your Quarto file to the data we’ve provided. While we have not provided a specific template for this Lab, we encourage you to adapt the one provided for <a href="./lab2.html#template">Lab 2</a>.</p>
-</section>
-<section id="question-1.-10-points" class="level1">
-<h1>Question 1. (10 points)</h1>
-<p>This question uses the <code>oh22</code> data developed in <a href="./lab1.html">Lab 1</a>. See the <a href="./lab1.html">Lab 1 instructions</a> for details on the data set. Back in Lab 1, recall that we loaded the data with this code.</p>
+<p>This document contains a list of R packages we will use in 432 and that we expect you to install in your RStudio.</p>
+<section id="r-packages-to-install" class="level2">
+<h2 class="anchored" data-anchor-id="r-packages-to-install">R Packages to Install</h2>
+<p>An R “package” is a collection of functions, data, and documentation that extends the capabilities of R, and is the critical way to get R doing interesting work. These package instructions should be used after you’ve installed R and RStudio. We will add packages to this list as the semester continues.</p>
+<ol type="1">
+<li>Open RStudio. Copy and paste the following lines of code into the Console window of RStudio to install a few key packages.</li>
+</ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span>opts_chunk<span class="sc">$</span><span class="fu">set</span>(<span class="at">comment =</span> <span class="cn">NA</span>)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>oh22 <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"https://raw.githubusercontent.com/THOMASELOVE/432-data/master/data/oh_counties_2022.csv"</span>, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>) <span class="sc">|&gt;</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">clean_names</span>() <span class="sc">|&gt;</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">fips =</span> <span class="fu">as.character</span>(fips))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>pkgs <span class="ot">&lt;-</span> <span class="fu">c</span>(  <span class="st">"afex"</span>, <span class="st">"aplpack"</span>, <span class="st">"aplore3"</span>, <span class="st">"arm"</span>, <span class="st">"babynames"</span>, <span class="st">"bestglm"</span>, </span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>            <span class="st">"boot"</span>, <span class="st">"broom"</span>, <span class="st">"car"</span>, <span class="st">"cowplot"</span>, <span class="st">"DataExplorer"</span>, <span class="st">"devtools"</span>, </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Epi"</span>, <span class="st">"equatiomatic"</span>, <span class="st">"exact2x2"</span>, <span class="st">"ez"</span>, <span class="st">"faraway"</span>, </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>            <span class="st">"fivethirtyeight"</span>, <span class="st">"foreign"</span>, <span class="st">"gapminder"</span>, <span class="st">"gee"</span>, <span class="st">"geepack"</span>,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>            <span class="st">"GGally"</span>, <span class="st">"ggdist"</span>, <span class="st">"ggforce"</span>, <span class="st">"ggrepel"</span>, <span class="st">"ggridges"</span>, <span class="st">"ggstance"</span>,</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>            <span class="st">"ggthemes"</span>, <span class="st">"glue"</span>, <span class="st">"gmodels"</span>, <span class="st">"gridExtra"</span>, <span class="st">"gt"</span>, <span class="st">"gtExtras"</span>, </span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>            <span class="st">"gtsummary"</span>, <span class="st">"here"</span>, <span class="st">"Hmisc"</span>, <span class="st">"HSAUR"</span>, <span class="st">"infer"</span>, <span class="st">"janitor"</span>, </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>            <span class="st">"kableExtra"</span>, <span class="st">"knitr"</span>, <span class="st">"lars"</span>, <span class="st">"lattice"</span>, <span class="st">"leaps"</span>, <span class="st">"lme4"</span>, </span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>            <span class="st">"lmerTest"</span>, <span class="st">"lmtest"</span>, <span class="st">"lvplot"</span>, <span class="st">"magrittr"</span>, <span class="st">"markdown"</span>, <span class="st">"MASS"</span>, </span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>            <span class="st">"mdsr"</span>, <span class="st">"mice"</span>, <span class="st">"mitml"</span>, <span class="st">"modelsummary"</span>, <span class="st">"moderndive"</span>, <span class="st">"mosaic"</span>, </span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>            <span class="st">"multcomp"</span>, <span class="st">"naniar"</span>, <span class="st">"NHANES"</span>, <span class="st">"nhanesA"</span>, <span class="st">"nnet"</span>, <span class="st">"palmerpenguins"</span>,</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>            <span class="st">"party"</span>, <span class="st">"patchwork"</span>, <span class="st">"posterdown"</span>, <span class="st">"pROC"</span>, <span class="st">"PropCIs"</span>, <span class="st">"pscl"</span>, </span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>            <span class="st">"psych"</span>, <span class="st">"pwr"</span>, <span class="st">"qcc"</span>, <span class="st">"QuantPsyc"</span>, <span class="st">"quantreg"</span>, <span class="st">"ResourceSelection"</span>,</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>            <span class="st">"rmarkdown"</span>, <span class="st">"rmdformats"</span>, <span class="st">"rms"</span>, <span class="st">"robustbase"</span>, <span class="st">"ROCR"</span>, <span class="st">"rpart"</span>,</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>            <span class="st">"rpart.plot"</span>, <span class="st">"rstanarm"</span>, <span class="st">"sandwich"</span>, <span class="st">"simputation"</span>, <span class="st">"spelling"</span>,</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>            <span class="st">"styler"</span>, <span class="st">"summarytools"</span>, <span class="st">"survival"</span>, <span class="st">"survminer"</span>, <span class="st">"tableone"</span>, </span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>            <span class="st">"tidymodels"</span>, <span class="st">"tidyverse"</span>, <span class="st">"usethis"</span>, <span class="st">"vcd"</span>, <span class="st">"VGAM"</span>, <span class="st">"viridis"</span>, </span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>            <span class="st">"visdat"</span>, <span class="st">"xfun"</span>)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>                </span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(pkgs)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Use the <code>oh22</code> data to create a logistic regression model to predict the presence of a water violation (as contained in <code>h2oviol</code>) on the basis of <code>sev_housing</code> and <code>pm2.5</code>. Use a model with main effects only, and annotate your code with text so that it’s extremely clear what you are doing. Specify and then carefully interpret the estimated odds ratio associated with the <code>sev_housing</code> effect and a 90% confidence interval around that estimate in context using complete English sentences. Be sure to get the direction of the effect right in your modeling and description.</p>
-</section>
-<section id="question-2.-10-points" class="level1">
-<h1>Question 2. (10 points)</h1>
-<p>Begin with the <code>hbp3456</code> data we developed in <a href="./lab2.html">Lab 2</a>, but now restricted to the following <strong>four practices</strong>: Center, Elm, Plympton and Walnut, and to subjects with <strong>complete data</strong> on the <code>ldl</code> and <code>statin</code> variables. We will use these data for Questions 2-5 in this Lab.</p>
-<p>Build a logistic regression model to predict whether a subject seen in one of those four practices has a <code>statin</code> prescription based on:</p>
+<ol start="2" type="1">
+<li><p>Execute those commands by hitting Enter.</p></li>
+<li><p>Now, go to the Packages tab on the right side of your RStudio screen, and click on Update.</p></li>
+<li><p>This will bring up a dialog box. I usually click Select All, then click Install Updates.</p></li>
+</ol>
 <ul>
-<li>the subject’s current LDL cholesterol level</li>
-<li>which of the four practices they receive care from, along with</li>
-<li>the subject’s age.</li>
+<li>A popup box may appear, asking “Do you want to install from sources the packages which need compilation?” to which I usually answer No.&nbsp;A Yes response leads to a slower installation, but can solve problems if you still have them after updating.</li>
+<li>This may take a few minutes. As long as you’re seeing activity in the Console window, things are progressing.</li>
+<li>Eventually, you’ll get a message that “The downloaded source packages are in …” with a directory name. That’s the sign that the updating is done.</li>
+<li>Updating packages is something you’ll do occasionally throughout the semester, mostly when a problem happens.</li>
 </ul>
-<p>Fit two models: one with and one without an interaction term between the practice and the LDL level. Include the <code>age</code> variable in each model using a restricted cubic spline with four knots, but without any interaction with the other predictors. Display the coefficients of your two models.</p>
+<ol start="5" type="1">
+<li>Finally, choose File … Quit Session from the top menu.</li>
+</ol>
 </section>
-<section id="question-3.-10-points" class="level1">
-<h1>Question 3. (10 points)</h1>
-<p>For the “no interaction” model from Question 2, interpret the odds ratio associated with the <code>ldl</code> main effect carefully, specifying a 90% confidence interval and what we can conclude from the results.</p>
-<ul>
-<li>To obtain a 90% confidence interval with a fit using one of the <code>rms</code> fitting functions rather than the default 95% interval, the appropriate code would be <code>summary(modelname, conf.int = 0.9)</code>.</li>
-<li>Hint: We assume you will describe the <code>ldl</code> main effect by considering the case of Harry and Sally. Harry has an <code>ldl</code> value of 142, equal to the 75th percentile <code>ldl</code> value in the data. Sally has an <code>ldl</code> value of 85, equal to the 25th percentile <code>ldl</code> value in the data. Assume Harry and Sally are the same <code>age</code> and receive care at the same <code>practice</code>. So the odds ratio of interest here compares the odds of <code>statin</code> prescription for Harry to the odds of <code>statin</code> prescription for Sally.</li>
-</ul>
+<section id="note-a-windows-issue" class="level2">
+<h2 class="anchored" data-anchor-id="note-a-windows-issue">Note: A Windows Issue</h2>
+<p>If you are using Windows, and get messages during installation that the latest version of RTools needs to be installed, you can usually just ignore them. If you don’t want to ignore them, go here to download and install RTools for Windows.</p>
 </section>
-<section id="question-4.-10-points" class="level1">
-<h1>Question 4. (10 points)</h1>
-<p>Now using the “interaction” model from Question 2, please interpret the effect of <code>ldl</code> on the odds of a statin prescription appropriately, specifying again what we can conclude from the results. A detailed description of the point estimate(s) will be sufficient here.</p>
+<section id="the-meta-packages" class="level2">
+<h2 class="anchored" data-anchor-id="the-meta-packages">The Meta-Packages</h2>
 <ul>
-<li>Here, we want you to describe the <code>ldl</code> main effect by considering the case of Harry and Sally. Harry has an <code>ldl</code> value of 142, equal to the 75th percentile <code>ldl</code> value in the data. Sally has an <code>ldl</code> value of 85, equal to the 25th percentile <code>ldl</code> value in the data. Assume Harry and Sally are the same <code>age</code> and receive care at the same <code>practice</code>. So the odds ratio of interest here compares the odds of <code>statin</code> prescription for Harry to the odds of <code>statin</code> prescription for Sally. But now, you need to be able to do this separately for each individual level of <code>practice</code>, since <code>practice</code> interacts with <code>ldl</code>. There are at least two ways to accomplish this.
-<ul>
-<li>In one approach, you would create predicted odds values for Harry and Sally, assuming a common age (40 would be a reasonable choice, and it’s the one used in the answer sketch) with <code>ldl</code> set to 142 for Harry and 85 for Sally, but creating four different versions of Harry and Sally (one for each practice.) Then use those predicted odds within each practice to obtain practice-specific odds ratios.</li>
-<li>In the other approach, you could convince the <code>rms</code> package to use a different practice as the choice for which adjustments are made. By default, <code>datadist</code> chooses the modal practice. To change this, you’d need to convince <code>datadist</code> instead to choose its practice based on which practice is the first one, and relevel the practice factor accordingly. So, if you’d releveled the practice data so that Elm was first and placed that into a tibble called <code>dataelm</code>, you could use the following adjustment to the <code>datadist</code> call to ensure that the adjustments made by <code>datadist</code> used Elm instead of the modal practice.</li>
-</ul></li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>d_elm <span class="ot">&lt;-</span> <span class="fu">datadist</span>(dataelm, <span class="at">adjto.cat =</span> <span class="st">"first"</span>)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">datadist =</span> <span class="st">"d_elm"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="question-5.-10-points" class="level1">
-<h1>Question 5. (10 points)</h1>
-<p>Now, compare the effectiveness of your two fitted models (the “interaction” and “no interaction” models) from Question 2 and draw a reasoned conclusion about which of those two models is more effective in describing the available set of observations (after those without <code>statin</code> data are removed) from these four practices. An appropriate response will make use of at least two different validated assessments of fit quality. Be sure to justify your eventual selection (between the “interaction” or “no interaction” model) with complete sentences.</p>
-<ul>
-<li>The natural choices for validated assessments of fit quality in Question 5 are a bootstrap-validated C statistic and a bootstrap-validated Nagelkerke <span class="math inline">\(R^2\)</span>. In the answer sketch, we will use <code>2023</code> as our random seed for this work, and we’ll use the default amount of bootstrap replications.</li>
+<li>Installing the tidyverse meta-package installs the packages listed at https://www.tidyverse.org/.</li>
+<li>Installing the tidymodels meta-package installs the packages listed at https://www.tidymodels.org/packages/.</li>
 </ul>
 </section>
-<section id="session-information" class="level1">
-<h1>Session Information</h1>
-<p>Please display your session information at the end of your submission, as shown below.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>xfun<span class="sc">::</span><span class="fu">session_info</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>R version 4.2.2 (2022-10-31 ucrt)
-Platform: x86_64-w64-mingw32/x64 (64-bit)
-Running under: Windows 10 x64 (build 22621)
-
-Locale:
-  LC_COLLATE=English_United States.utf8 
-  LC_CTYPE=English_United States.utf8   
-  LC_MONETARY=English_United States.utf8
-  LC_NUMERIC=C                          
-  LC_TIME=English_United States.utf8    
-
-Package version:
-  askpass_1.1         assertthat_0.2.1    backports_1.4.1    
-  base64enc_0.1.3     bit_4.0.5           bit64_4.0.5        
-  blob_1.2.3          broom_1.0.2         bslib_0.4.2        
-  cachem_1.0.6        callr_3.7.3         cellranger_1.1.0   
-  cli_3.4.1           clipr_0.8.0         colorspace_2.0-3   
-  compiler_4.2.2      cpp11_0.4.3         crayon_1.5.2       
-  curl_4.3.3          data.table_1.14.6   DBI_1.1.3          
-  dbplyr_2.2.1        digest_0.6.31       dplyr_1.0.10       
-  dtplyr_1.2.2        ellipsis_0.3.2      evaluate_0.19      
-  fansi_1.0.3         farver_2.1.1        fastmap_1.1.0      
-  forcats_0.5.2       fs_1.5.2            gargle_1.2.1       
-  generics_0.1.3      ggplot2_3.4.0       glue_1.6.2         
-  googledrive_2.0.0   googlesheets4_1.0.1 graphics_4.2.2     
-  grDevices_4.2.2     grid_4.2.2          gtable_0.3.1       
-  haven_2.5.1         highr_0.9           hms_1.1.2          
-  htmltools_0.5.4     htmlwidgets_1.6.0   httr_1.4.4         
-  ids_1.0.1           isoband_0.2.6       janitor_2.1.0      
-  jquerylib_0.1.4     jsonlite_1.8.4      knitr_1.41         
-  labeling_0.4.2      lattice_0.20.45     lifecycle_1.0.3    
-  lubridate_1.9.0     magrittr_2.0.3      MASS_7.3.58.1      
-  Matrix_1.5.3        memoise_2.0.1       methods_4.2.2      
-  mgcv_1.8.41         mime_0.12           modelr_0.1.10      
-  munsell_0.5.0       nlme_3.1.160        openssl_2.0.5      
-  parallel_4.2.2      pillar_1.8.1        pkgconfig_2.0.3    
-  prettyunits_1.1.1   processx_3.8.0      progress_1.2.2     
-  ps_1.7.2            purrr_0.3.5         R6_2.5.1           
-  rappdirs_0.3.3      RColorBrewer_1.1.3  readr_2.1.3        
-  readxl_1.4.1        rematch_1.0.1       rematch2_2.1.2     
-  reprex_2.0.2        rlang_1.0.6         rmarkdown_2.19     
-  rstudioapi_0.14     rvest_1.0.3         sass_0.4.4         
-  scales_1.2.1        selectr_0.4.2       snakecase_0.11.0   
-  splines_4.2.2       stats_4.2.2         stringi_1.7.8      
-  stringr_1.5.0       sys_3.4.1           tibble_3.1.8       
-  tidyr_1.2.1         tidyselect_1.2.0    tidyverse_1.3.2    
-  timechange_0.1.1    tinytex_0.43        tools_4.2.2        
-  tzdb_0.3.0          utf8_1.2.2          utils_4.2.2        
-  uuid_1.1.0          vctrs_0.5.1         viridisLite_0.4.1  
-  vroom_1.6.0         withr_2.5.0         xfun_0.35          
-  xml2_1.3.3          yaml_2.3.6         </code></pre>
-</div>
-</div>
+<section id="a-special-note-on-the-countreg-package" class="level2">
+<h2 class="anchored" data-anchor-id="a-special-note-on-the-countreg-package">A Special Note on the <code>countreg</code> package</h2>
+<p>To build rootograms to visualize the results of regression models on count outcomes, I have decided for the moment to continue to use the <code>countreg</code> package, which is currently available on R-Forge only.</p>
+<p>To install <code>countreg</code>, type <code>install.packages("countreg", repos="http://R-Forge.R-project.org")</code> into the R Console within R Studio.</p>
+</section>
+<section id="installing-a-single-package" class="level2">
+<h2 class="anchored" data-anchor-id="installing-a-single-package">Installing a Single Package</h2>
+<p>If you want to install a single package, you can do so by finding the word Packages on the right side of your RStudio screen.</p>
+<ol type="1">
+<li>Click on the Packages tab to start installing the packages you’ll need.</li>
+<li>Click Install, which will bring up a dialog box, where you can type in the names of the packages that you need. These should be separated by a space or comma. Be sure to leave the Install dependencies box checked.</li>
+</ol>
+<ul>
+<li>A popup box may appear, asking “Do you want to install from sources the packages which need compilation?” to which I usually answer No.&nbsp;A Yes response leads to a slower installation, but can solve problems if you still have them after updating.</li>
+<li>This may take a few minutes. As long as you’re seeing activity in the Console window, things are progressing.</li>
+<li>Eventually, you’ll get a message that “The downloaded source packages are in …” with a directory name. That’s the sign that the updating is done.</li>
+</ul>
 
 
 </section>

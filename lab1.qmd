@@ -1,6 +1,6 @@
 ---
 title: "Lab 1"
-date: "`r Sys.time()`"
+date: last-modified
 format: 
   html:
     code-overflow: wrap
@@ -15,6 +15,9 @@ format:
 
 Your response should include a Quarto file (.qmd) and an HTML document that is the result of applying your Quarto file to the data we've provided.
 
+## Template
+
+There is a [Lab 1 Quarto template](https://raw.githubusercontent.com/THOMASELOVE/432-data/master/templates/lab1_template.qmd) available on [our 432-data page](https://github.com/THOMASELOVE/432-data). Please use the template to prepare your response to Lab 1, as it will make things easier for you and for the people grading your work.
 
 ## The Data
 

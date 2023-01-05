@@ -32,8 +32,10 @@ website:
         menu: 
           - quiz1.qmd
           - quiz2.qmd
-      - text: "Data"
+      - text: "Data and Code"
         href: https://github.com/THOMASELOVE/432-data
+      - text: "Packages"
+        href: packages.qmd
     right:
       - text: "Campuswire"
         href: https://campuswire.com/
@@ -47,5 +49,6 @@ format:
     theme: litera
     css: styles.css
     toc: true
+    date-format: iso
 
 

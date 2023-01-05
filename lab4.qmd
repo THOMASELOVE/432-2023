@@ -1,6 +1,6 @@
 ---
 title: "Lab 4"
-date: "`r Sys.time()`"
+date: last-modified
 format: 
   html:
     code-overflow: wrap
@@ -13,7 +13,7 @@ format:
   - Work submitted late, but within 12 hours of the deadline will lose 5 of the available 50 points.
   - Work submitted more than 12 hours after the deadline will lose 10 of the available 50 points.
 
-Your response should include a Quarto file (.qmd) and an HTML document that is the result of applying your Quarto file to the data we've provided.
+Your response should include a Quarto file (.qmd) and an HTML document that is the result of applying your Quarto file to the data we've provided. While we have not provided a specific template for this Lab, we encourage you to adapt the one provided for [Lab 2](lab2.qmd#template).
 
 # Question 1. (10 points)
 
