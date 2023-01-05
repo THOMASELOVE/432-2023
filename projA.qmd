@@ -16,7 +16,7 @@ All Project A work is to be submitted [via Canvas](https://canvas.case.edu/).
 
 ## Templates
 
-On our [432-data page](https://github.com/THOMASELOVE/432-data), you will find (in the templates subfolder within the data folder) a pair of Quarto templates: [one for the Project A Plan](https://raw.githubusercontent.com/THOMASELOVE/432-data/master/data/templates/projectAplan_template.qmd), and [another for the Project A Portfolio](https://raw.githubusercontent.com/THOMASELOVE/432-data/master/data/templates/projectAportfolio_template.qmd). Please use these templates in preparing your work. They will make completing and grading Project A much easier.
+On our [432-data page](https://github.com/THOMASELOVE/432-data), you will find (in the templates subfolder) a pair of Quarto templates: [one for the Project A Plan](https://raw.githubusercontent.com/THOMASELOVE/432-data/master/templates/projectAplan_template.qmd), and [another for the Project A Portfolio](https://raw.githubusercontent.com/THOMASELOVE/432-data/master/templates/projectAportfolio_template.qmd). Please use these templates in preparing your work. They will make completing and grading Project A much easier.
 
 ## Working with a Partner?
 
@@ -130,11 +130,11 @@ Please keep the title to no more than 80 characters, including spaces. You can a
 
 ### R Packages and Setup
 
-You’ll load necessary packages at the start in an unnumbered section of your work, following the template.
+You’ll load necessary packages at the start in an unnumbered section of your work, following the [template](#templates).
 
 - Do not use `source("Love-boost.R")` or any other R script or package unless you actually need something it provides.
 - Do not load core elements of `tidyverse` or `tidymodels` separately. instead just load the meta-packages, and do so last.
-- Use `#| message: false` as part of your Quarto code chunk where the packages are listed (as we have done in the template) to eliminate HTML messages about when packages were built or how objects were masked.
+- Use `#| message: false` as part of your Quarto code chunk where the packages are listed (as we have done in the [template](#templates)) to eliminate HTML messages about when packages were built or how objects were masked.
 
 ### 1. Data Source
 

@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "00labs.html",
+    "href": "00labs.html",
+    "title": "Lab Notes",
+    "section": "",
+    "text": "What are the Labs about?\n\n\n\nLab\nTopics\nOld Labs?\n\n\n\n\nLab 1\nCan you build a data viz with Quarto and submit it to us successfully? Can you compare two regressions fit to a training sample and a validation sample?\n2022 Lab 2 Question 1 is viz, 2022 Lab 2 Question 4 could be adapted to part 2 here\n\n\nLab 2\nCan you use survey weights to complete some sort of inference, can you fit a two-way ANOVA model with interaction?\nANOVA is 2022 Lab 1 Question 2, Survey Weights is from 2022 Quiz 2\n\n\nLab 3\nCan you build a linear regression model using non-linear terms with ols and Spearman \\(\\rho^2\\)?\nThis is basically 2022 Lab 3 Part B\n\n\nLab 4\nCan you build a simple logistic model and use it to make predictions, and then can you build a more complex logistic regression model with non-linear terms, and compare it to a main effects fit?\nSimple model is 2022 Lab 2 Question 5. Complex model is essentially 2022 Lab 3 Part A\n\n\nLab 5\nCan you build a Table 1, and can you use results from a lasso approach to select predictors and evaluate results against a validation sample?\nTable 1 is 2022 Lab 1 Question 1, LASSO is from 2022 Quiz 2\n\n\nLab 6\nCan you run and describe a Kaplan-Meier curve, and can you complete a regression on a count outcome?\nK-M is sort of Lab 6 Q5 (without requiring log rank test) Count is Lab 4 Q4\n\n\nLab 7\nCan you run and describe regression results from an ordinal outcome, and use multiple imputation in a logistic model?\nOrdinal is Lab 4 Q3, MI is from 2022 Quiz 2\n\n\nLab 8\nCan you fit and describe a Cox model with cpm and then can you use tidymodels to assess a linear model\nTidymodels is part of 2022 Lab 5, Cox is part of 2022 Lab 6 questions 2-4"
+  },
+  {
     "objectID": "calendar.html",
     "href": "calendar.html",
     "title": "Calendar for 432: Spring 2023",
@@ -189,13 +196,6 @@
     "text": "Hint for Question 1\nWhen you build the Spearman \\(\\rho^2\\) plot, use time but not the entire survival object as the “outcome.”"
   },
   {
-    "objectID": "labs.html",
-    "href": "labs.html",
-    "title": "Lab Notes",
-    "section": "",
-    "text": "What are the Labs about?\n\n\n\nLab\nTopics\nOld Labs?\n\n\n\n\nLab 1\nCan you build a data viz with Quarto and submit it to us successfully? Can you compare two regressions fit to a training sample and a validation sample?\n2022 Lab 2 Question 1 is viz, 2022 Lab 2 Question 4 could be adapted to part 2 here\n\n\nLab 2\nCan you use survey weights to complete some sort of inference, can you fit a two-way ANOVA model with interaction?\nANOVA is 2022 Lab 1 Question 2, Survey Weights is from 2022 Quiz 2\n\n\nLab 3\nCan you build a linear regression model using non-linear terms with ols and Spearman \\(\\rho^2\\)?\nThis is basically 2022 Lab 3 Part B\n\n\nLab 4\nCan you build a simple logistic model and use it to make predictions, and then can you build a more complex logistic regression model with non-linear terms, and compare it to a main effects fit?\nSimple model is 2022 Lab 2 Question 5. Complex model is essentially 2022 Lab 3 Part A\n\n\nLab 5\nCan you build a Table 1, and can you use results from a lasso approach to select predictors and evaluate results against a validation sample?\nTable 1 is 2022 Lab 1 Question 1, LASSO is from 2022 Quiz 2\n\n\nLab 6\nCan you run and describe a Kaplan-Meier curve, and can you complete a regression on a count outcome?\nK-M is sort of Lab 6 Q5 (without requiring log rank test) Count is Lab 4 Q4\n\n\nLab 7\nCan you run and describe regression results from an ordinal outcome, and use multiple imputation in a logistic model?\nOrdinal is Lab 4 Q3, MI is from 2022 Quiz 2\n\n\nLab 8\nCan you fit and describe a Cox model with cpm and then can you use tidymodels to assess a linear model\nTidymodels is part of 2022 Lab 5, Cox is part of 2022 Lab 6 questions 2-4"
-  },
-  {
     "objectID": "notes.html",
     "href": "notes.html",
     "title": "432 Course Notes",
@@ -207,7 +207,7 @@
     "href": "projA.html",
     "title": "Project A",
     "section": "",
-    "text": "In Project A, you will be analyzing, presenting and discussing a pair of regression models, specifically a linear regression and a logistic regression, describing a data set (available to the public) that you identify.\nThere are two main deliverables:\n\nThe Project A Plan, due in mid-February when the Calendar says it is.\nThe Project A Portfolio and Presentation, due right after Spring Break, as the Calendar indicates.\n\nAll Project A work is to be submitted via Canvas.\n\n\nOn our 432-data page, you will find (in the templates subfolder within the data folder) a pair of Quarto templates: one for the Project A Plan, and another for the Project A Portfolio. Please use these templates in preparing your work. They will make completing and grading Project A much easier.\n\n\n\nYou can choose either to work alone, or with one other person, to complete Project A. If you work in a group for Project A, you may be asked to work alone for Project B later in the term.\n\nYou will need to identify your Project A partner prior to the submission of your Project A Plan.\nIf you are working with a partner, all work must be submitted by exactly one of you to Canvas while the non-reporting partner submits a one-page note to Canvas indicating the members of the partnership and that the partner will submit the work."
+    "text": "In Project A, you will be analyzing, presenting and discussing a pair of regression models, specifically a linear regression and a logistic regression, describing a data set (available to the public) that you identify.\nThere are two main deliverables:\n\nThe Project A Plan, due in mid-February when the Calendar says it is.\nThe Project A Portfolio and Presentation, due right after Spring Break, as the Calendar indicates.\n\nAll Project A work is to be submitted via Canvas.\n\n\nOn our 432-data page, you will find (in the templates subfolder) a pair of Quarto templates: one for the Project A Plan, and another for the Project A Portfolio. Please use these templates in preparing your work. They will make completing and grading Project A much easier.\n\n\n\nYou can choose either to work alone, or with one other person, to complete Project A. If you work in a group for Project A, you may be asked to work alone for Project B later in the term.\n\nYou will need to identify your Project A partner prior to the submission of your Project A Plan.\nIf you are working with a partner, all work must be submitted by exactly one of you to Canvas while the non-reporting partner submits a one-page note to Canvas indicating the members of the partnership and that the partner will submit the work."
   },
   {
     "objectID": "projA.html#what-makes-a-data-set-acceptable",
