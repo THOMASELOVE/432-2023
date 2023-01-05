@@ -1,0 +1,51 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "432-2023"
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Calendar"
+        href: calendar.qmd
+      - text: "Syllabus"
+        href: syllabus.qmd
+      - text: "Notes"
+        href: notes.qmd
+      - text: "Labs"
+        menu: 
+          - lab1.qmd
+          - lab2.qmd
+          - lab3.qmd
+          - lab4.qmd
+          - lab5.qmd
+          - lab6.qmd
+          - lab7.qmd
+          - lab8.qmd
+      - text: "Projects"
+        menu: 
+          - projA.qmd
+          - projB.qmd
+      - text: "Quizzes"
+        menu: 
+          - quiz1.qmd
+          - quiz2.qmd
+      - text: "Data"
+        href: https://github.com/THOMASELOVE/432-data
+    right:
+      - text: "Campuswire"
+        href: https://campuswire.com/
+      - text: "Canvas"
+        href: https://canvas.case.edu/
+      - text: "Contact Us"
+        href: contact.qmd
+
+format:
+  html:
+    theme: litera
+    css: styles.css
+    toc: true
+
+

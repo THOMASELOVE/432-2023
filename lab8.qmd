@@ -1,0 +1,69 @@
+---
+title: "Lab 8"
+date: "`r Sys.time()`"
+format: 
+  html:
+    code-overflow: wrap
+---
+
+# General Instructions
+
+- Submit your work via [Canvas](https://canvas.case.edu/). 
+- The deadline for this Lab is specified on the [Calendar](calendar.qmd).
+  - Work submitted late, but within 12 hours of the deadline will lose 5 of the available 50 points.
+  - Work submitted more than 12 hours after the deadline will lose 10 of the available 50 points.
+
+Your response should include a Quarto file (.qmd) and an HTML document that is the result of applying your Quarto file to the data we've provided.
+
+# Data and Codebook for Questions 1-2
+
+The `umaru.csv` data file found on [our 432-data page](https://github.com/THOMASELOVE/432-data) contains information for 575 subjects selected from the UMARU IMPACT study collaborative project done by the University of Massachusetts AIDS Research Unit over 5 years (1989-1994). Various versions of this data set are frequently used in survival analysis texts. I've tweaked your data set enough that you'll see some different results. The study included two concurrent randomized trials of residential treatment for drug abuse. The key question is to compare treatment programs of different planned durations in terms of their ability to reduce drug abuse and prevent high-risk HIV behavior. Here's a codebook:
+
+Variable | Description 
+------------: | -------------------------------------------------------------------------------------
+`subject` | Subject ID #, ranging from 1001 - 1575
+`age` | age at enrollment, in years
+`beck` | Beck Depression Score at admission 
+`hercoc` | heroin or cocaine use during the 3 months prior to admission (1 = Heroin \& Cocaine, 2 = Heroin only, 3 = Cocaine only, 4 = Neither Heroin nor Cocaine) 
+`ivhx` | IV drug use history at admission (1 = never, 2 = previous but not recent, 3 = recent) 
+`ndrugtx` | # of prior drug treatments
+`race` | subject's race (0 = white, 1 = other)
+`treat` | treatment randomization assignment (Long, or Short) 
+`site` | treatment site (A or B)
+`lot` | Length of Treatment (Exit Date - Admission Date), in days
+`time` | Time to Return to Drug Use (measured from Admission Date), in days
+`censor` | Returned to Drug Use indicator (1  = returned to drug use, 0 = otherwise)
+
+# Question 1 (10 points)
+
+Build a Cox model, using `treat` as a predictor, and spending degrees of freedom in any way you like with the rest of the available predictors (i.e. *everything but* `subject`, `lot`, `time` and `censor`) in the `umaru` data set, so long as you do not exceed a total of 12 degrees of freedom, predicting the time to return to drug use. You'll probably want to use a Spearman rho-squared plot to make your selection, in which case you should stick with the model you develop using that tool, regardless of its eventual performance. Specify your model carefully, and interpret the hazard ratio for `treat` implied by your new model. 
+
+## Hint for Question 1
+
+When you build the Spearman $\rho^2$ plot, use `time` but not the entire survival object as the "outcome."
+
+# Question 2 (10 points)
+
+Assess the quality of fit from your model (be sure to use at least two different assessments of fit quality) and an assessment of adherence to the assumptions of a proportional hazards model to help justify your final selection. Validate the summary statistics describing your chosen model, and explain what those results mean in complete English8 sentences, too.
+
+# Question 3 (30 points)
+
+Next, we will fit a model to the `hbp3456` data we first described and developed [in Lab 2](lab2.qmd), predicting systolic blood pressure (`sbp`) using four variables: the subject's age (`age`), weight (`weight`), LDL cholesterol level (`ldl`), and whether or not the subject is using an ACE-inhibitor or ARB medication (`acearb`). Throughout this question, annotate your R code with text so that it is very clear what you're doing.
+
+a. (5 points) Use `set.seed(2023)` and the `rsample` package to split the data into a training sample (called `hbp_train`) consisting of essentially 70% of the subjects, and a testing sample (called `hbp_test`) of the remaining 30% of the counties, while requiring a very similar distribution of `insurance` across the training and test samples.
+
+b. (10 points) Build a recipe for pre-processing the predictors and establishing the roles of your variables in your model. For each model, be sure your recipe normalizes all predictors and uses indicator variables for any factors, using the training set of data. Create a workflow that uses the `lm` modeling engine for your model, then fit the model to the training sample. Then create a revised workflow that instead uses a Bayesian approach with `stan` to fit Model 2, using a seed of 2022 again, as well as a Student t distribution with 1 degree of freedom for the intercept term, and a Normal distribution with mean 0 and variance 4 for each of the predictors.
+
+c. (5 points) Compare the coefficients of your `stan` fit for the model to the `lm` fit in a plot of the coefficients, with a 95% confidence interval for each. Write a couple of complete English sentences addressing what you see in the plot, and what conclusions you draw from it.
+
+d. (10 points) Comparing the `lm` vs. the `stan` fit for the model you built earlier, assess out-of-sample performance in the testing data using three measures of predictive quality: the correlation-based R-square statistic, the root mean squared error and the mean absolute error. Produce an attractive table of the results for each model. Write a couple of complete English sentences describing your conclusions. 
+
+# Session Information
+
+Please display your session information at the end of your submission, as shown below.
+
+```{r}
+xfun::session_info()
+```
+
+

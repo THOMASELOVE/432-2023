@@ -1,0 +1,9 @@
+---
+title: "Quiz 2"
+---
+
+Quiz 2 materials will become available in late April according to the [Calendar](calendar.qmd).
+
+The Quiz will include materials from Classes 1-25 of the course.
+
+If you have a question prior to the release of Quiz 2 about the Quiz, send it by email to Dr. Love at `thomas dot love at case dot edu`.

@@ -1,0 +1,9 @@
+---
+title: "Quiz 1"
+---
+
+Quiz 1 materials will become available in late February according to the [Calendar](calendar.qmd).
+
+The Quiz will include materials from Classes 1-11 of the course.
+
+If you have a question prior to the release of Quiz 1 about the Quiz, send it by email to Dr. Love at `thomas dot love at case dot edu`.

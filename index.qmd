@@ -1,0 +1,27 @@
+---
+title: "432 Main Page for Spring 2023"
+---
+
+## Welcome! 
+
+PQHS/CRSP/MPHP 432 is the second half ([431 is the first half](https://thomaselove.github.io/431-2022/)) of a two-semester course taught by Professor Thomas Love in the Department of Population and Quantitative Health Sciences at Case Western Reserve University. 
+
+If you have any questions before class begins, contact Dr. Love at `Thomas dot Love at case dot edu`.
+
+## Everything will appear here.
+
+Everything that Professor Love will provide to help you with the course will be linked through this website. The menu bar links to just about everything you'll need this semester, and its elements will go live as they become available. This includes:
+
+- The [Course Calendar](calendar.qmd)
+- The Course Syllabus
+- Professor Love's Course Notes
+- Details on Assignments, including [Projects](projA.qmd), [Quizzes](quiz1.qmd), [Labs](lab1.qmd) and [Minute Papers](https://github.com/THOMASELOVE/432-minute-2023)
+- Information on installing R and RStudio, installing key R packages, and downloading data you'll need for class
+- Additional Sources and references, including things to read or watch to supplement our main work
+- a link to the [Canvas system](https://canvas.case.edu/) (CWRU log-in required) we use to communicate information about class recordings, and for turning in assignments
+- a link to the Shared Google Drive
+- a link to the [Campuswire discussion board](https://campuswire.com/) for the 432 course, and
+- more information on places where you can get help and contact us.
+
+Note that the [431 class materials from Fall 2022 are here](https://thomaselove.github.io/431-2022/), and will remain there until 2023-06-01.
+

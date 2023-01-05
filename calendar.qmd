@@ -1,0 +1,90 @@
+---
+title: "Calendar for 432: Spring 2023"
+---
+
+## January 2023
+
+Link | Date | Details
+:----: | :----: | :---------------------------------
+Class 01 | TUE <br /> 01-17 | Getting Started, Using Quarto, Validation of Prediction Models
+-- | WED <br /> 01-18 | Welcome to 432 Survey and Campuswire sign-up due at Noon.
+Class 02 | THU <br /> 01-19 | Building a Detailed Project with NHANES Data (reviewing 431 ideas)
+-- | MON <br /> 01-23 | [Lab 1](lab1.qmd) due at 9 PM.
+Class 03 | TUE <br /> 01-24 | Developing Inferences using Survey Weights
+-- | WED <br /> 01-25 | [Minute Paper](https://github.com/THOMASELOVE/432-minute-2023) after Class 03 due at Noon.
+Class 04 | THU <br /> 01-26 | Linear Regression and ANOVA/ANCOVA models
+-- | MON <br /> 01-30 | [Lab 2](lab2.qmd) due at 9 PM.
+Class 05 | TUE <br /> 01-31 | Linear Regression using Non-linear terms and `ols`
+
+## February 2023
+
+Link | Date | Details
+:----: | :----: | :---------------------------------
+-- | WED <br /> 02-01 | [Minute Paper](https://github.com/THOMASELOVE/432-minute-2023) after Class 05 due at Noon.
+Class 06 | THU <br /> 02-02 | Building Linear Models Effectively, Troubleshooting
+-- | MON <br /> 02-06 | [Lab 3](lab3.qmd) due at 9 PM.
+Class 07 | TUE <br /> 02-07 | Logistic Regression for Binary Outcomes
+-- | WED <br /> 02-08 | [Minute Paper](https://github.com/THOMASELOVE/432-minute-2023) after Class 07 due at Noon.
+Class 08 | THU <br /> 02-09 | Logistic Regression with More Predictors
+-- | MON <br /> 02-13 | [Project A plan](projA.qmd) due at 9 PM.
+Class 09 | TUE <br /> 02-14 | Logistic Regression using Non-linear terms and `lrm`
+-- | WED <br /> 02-15 | [Minute Paper](https://github.com/THOMASELOVE/432-minute-2023) after Class 09 due at Noon.
+Class 10 | THU <br /> 02-16 | Building Logistic Models Effectively, Troubleshooting
+-- | MON <br /> 02-20 | [Lab 4](lab4.qmd) due at 9 PM.
+Class 11 | TUE <br /> 02-21 | Ridge Regression and the Lasso, Variable Selection
+-- | WED <br /> 02-22 | [Minute Paper](https://github.com/THOMASELOVE/432-minute-2023) after Class 11 due at Noon.
+Class 12 | THU <br /> 02-23 | Building Table 1 <br /> [Quiz 1](quiz1.qmd) made available by 5 PM.
+-- | MON <br /> 02-27 | [Quiz 1](quiz1.qmd) due at 9 PM.
+Class 13 | TUE <br /> 02-28 | Thinking About Power: Retrospective Design
+
+## March 2023
+
+Link | Date | Details
+:----: | :----: | :---------------------------------
+-- | WED <br /> 03-01 | [Minute Paper](https://github.com/THOMASELOVE/432-minute-2023) after Class 13 due at Noon.
+Class 14 | THU <br /> 03-02 | Time-to-event (survival) data and Kaplan-Meier Curves
+-- | MON <br /> 03-06 | [Lab 5](lab5.qmd) due at 9 PM.
+Class 15 | TUE <br /> 03-07 | Regression on Count Outcomes
+-- | WED <br /> 03-08 | [Minute Paper](https://github.com/THOMASELOVE/432-minute-2023) after Class 15 due at Noon.
+Class 16 | THU <br /> 03-09 | Regression on Count Outcomes
+Spring <br /> Break | Week of <br /> 03-13 | CWRU Spring Break
+-- | MON <br /> 03-20 | [Project A Portfolio](projA.qmd) due at 9 PM.
+Class 17 | TUE <br /> 03-21 | Regression on Multi-Categorical Outcomes
+-- | WED <br /> 03-22 | [Minute Paper](https://github.com/THOMASELOVE/432-minute-2023) after Class 17 due at Noon.
+Class 18 | THU <br /> 03-23 | Pre-recorded class session. **Topic TBD.**
+-- | MON <br /> 03-27 | [Lab 6](lab6.qmd) due at 9 PM.
+Class 19 | TUE <br /> 03-28 | Regression on Multi-Categorical Outcomes
+-- | WED <br /> 03-29 | [Minute Paper](https://github.com/THOMASELOVE/432-minute-2023) after Class 19 due at Noon.
+Class 20 | THU <br /> 03-30 | Regression on Multi-Categorical Outcomes
+
+## April 2023
+
+Link | Date | Details
+:----: | :----: | :---------------------------------
+-- | MON <br /> 04-03 | [Lab 7](lab7.qmd) due at 9 PM.
+Class 21 | TUE <br /> 04-04 | Comparing Survival Curves, Fitting Cox Models
+-- | WED <br /> 04-05 | [Minute Paper](https://github.com/THOMASELOVE/432-minute-2023) after Class 21 due at Noon.
+Class 22 | THU <br /> 04-06 | Fitting Cox Models with `cpm`
+-- | MON <br /> 04-10 | [Project B Plan](projB.qmd) due at 9 PM.
+Class 23 | TUE <br /> 04-11 | Using `tidymodels` approaches to build linear models
+-- | WED <br /> 04-12 | [Minute Paper](https://github.com/THOMASELOVE/432-minute-2023) after Class 23 due at Noon.
+Class 24 | THU <br /> 04-13 | Building Robust Linear Models
+-- | MON <br /> 04-17 | [Lab 8](lab8.qmd) due at 9 PM.
+Class 25 | TUE <br /> 04-18 | Using `tidymodels` approaches to build logistic models
+-- | WED <br /> 04-19 | [Minute Paper](https://github.com/THOMASELOVE/432-minute-2023) after Class 25 due at Noon.
+Class 26 | THU <br /> 04-20 | **Topic TBD.** [Quiz 2](quiz2.qmd) available by 5 PM.
+-- | MON <br /> 04-24 | [Quiz 2](quiz2.qmd) due at 9 PM.
+Class 27 | TUE <br /> 04-25 | **Topic TBD.**
+-- | WED <br /> 04-26 | [Minute Paper](https://github.com/THOMASELOVE/432-minute-2023) after Class 27 due at Noon.
+Class 28 | THU <br /> 04-27 | Final Class Session
+
+## May 2023
+
+- Final Project Presentations (to be scheduled for early May)
+- All course materials, including the [Project B Portfolio](projB.qmd) to be submitted by 12 Noon on 2023-05-09.
+
+
+
+
+
+
