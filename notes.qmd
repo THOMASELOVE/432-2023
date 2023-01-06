@@ -2,6 +2,8 @@
 title: "432 Course Notes"
 ---
 
-Details to come.
+The old version of the course notes (built in February 2022) is posted to <https://thomaselove.github.io/432-notes/>.
+
+Revisions are underway.
 
 If you have a question at this time, send it by email to Dr. Love at `thomas dot love at case dot edu`.
