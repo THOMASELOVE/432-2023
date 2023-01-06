@@ -14,6 +14,10 @@ website:
         href: syllabus.qmd
       - text: "Notes"
         href: notes.qmd
+      - text: "Software"
+        href: software.qmd
+      - text: "Data & Code"
+        href: https://github.com/THOMASELOVE/432-data
       - text: "Labs"
         menu: 
           - lab1.qmd
@@ -32,15 +36,19 @@ website:
         menu: 
           - quiz1.qmd
           - quiz2.qmd
-      - text: "Data and Code"
-        href: https://github.com/THOMASELOVE/432-data
-      - text: "Packages"
-        href: packages.qmd
     right:
-      - text: "Campuswire"
-        href: https://campuswire.com/
-      - text: "Canvas"
-        href: https://canvas.case.edu/
+      - text: "Important Links"
+        menu: 
+        - text: "Campuswire discussion board"
+          href: https://campuswire.com/
+        - text: "Canvas (submissions & recordings)"
+          href: https://canvas.case.edu/
+        - text: "Shared Google Drive (CWRU)"
+          href: https://docs.google.com/document/d/1A6-P4TRXrCZVAqfDWw_s75lBGID9wHiaJjbsjltXojs/edit?usp=sharing
+        - text: "Minute Papers (Github)"
+          href: https://github.com/THOMASELOVE/432-minute-2023
+        - text: "Class READMEs (Github)"
+          href: https://github.com/THOMASELOVE/432-classes-2023
       - text: "Contact Us"
         href: contact.qmd
 

@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-01-05">
+<meta name="dcterms.date" content="2023-01-06">
 
-<title>432-2023 - R Packages for 432</title>
+<title>432-2023 - Software for 432</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -160,7 +160,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
  <span class="menu-text">Notes</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./software.html">
+    <a class="nav-link active" href="./software.html" aria-current="page">
  <span class="menu-text">Software</span></a>
   </li>  
   <li class="nav-item">
@@ -284,10 +284,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#r-packages-to-install" id="toc-r-packages-to-install" class="nav-link active" data-scroll-target="#r-packages-to-install">R Packages to Install</a></li>
+  <li><a href="#installing-r-and-rstudio" id="toc-installing-r-and-rstudio" class="nav-link active" data-scroll-target="#installing-r-and-rstudio">Installing R and RStudio</a></li>
+  <li><a href="#r-packages-to-install" id="toc-r-packages-to-install" class="nav-link" data-scroll-target="#r-packages-to-install">R Packages to Install</a>
+  <ul class="collapse">
+  <li><a href="#updating-your-r-packages" id="toc-updating-your-r-packages" class="nav-link" data-scroll-target="#updating-your-r-packages">Updating Your R Packages</a></li>
   <li><a href="#the-meta-packages" id="toc-the-meta-packages" class="nav-link" data-scroll-target="#the-meta-packages">The Meta-Packages</a></li>
   <li><a href="#note-a-windows-issue-with-rtools" id="toc-note-a-windows-issue-with-rtools" class="nav-link" data-scroll-target="#note-a-windows-issue-with-rtools">Note: A Windows Issue with RTools</a></li>
   <li><a href="#installing-a-single-package" id="toc-installing-a-single-package" class="nav-link" data-scroll-target="#installing-a-single-package">Installing a Single Package</a></li>
+  </ul></li>
+  <li><a href="#need-installation-help" id="toc-need-installation-help" class="nav-link" data-scroll-target="#need-installation-help">Need Installation Help?</a></li>
   </ul>
 </nav>
     </div>
@@ -296,7 +301,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">R Packages for 432</h1>
+<h1 class="title">Software for 432</h1>
 </div>
 
 
@@ -307,7 +312,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">2023-01-05</p>
+      <p class="date">2023-01-06</p>
     </div>
   </div>
   
@@ -317,10 +322,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<p>This document contains a list of R packages we will use in 432 and that we expect you to install in your RStudio.</p>
-<section id="r-packages-to-install" class="level2">
-<h2 class="anchored" data-anchor-id="r-packages-to-install">R Packages to Install</h2>
-<p>An R “package” is a collection of functions, data, and documentation that extends the capabilities of R, and is the critical way to get R doing interesting work. These package instructions should be used after you’ve installed R and RStudio. We will add packages to this list as the semester continues.</p>
+<p>The course makes heavy use of the R statistical programming language, and several related tools, most especially the RStudio development environment. Every bit of this software is free to use, and open-source.</p>
+<p>You will need access to a computer to do your work for this class, not just an iPad or other tablet, but an actual computer. You do not need a state of the art machine, nor should you need any special hardware to run things for this course.</p>
+<section id="installing-r-and-rstudio" class="level1">
+<h1>Installing R and RStudio</h1>
+<p>The steps you need to complete are outlined at <a href="https://posit.co/download/rstudio-desktop/#download" class="uri">https://posit.co/download/rstudio-desktop/#download</a>:</p>
+<ol type="1">
+<li><p>Download and install <strong>the latest version of R</strong> (version <strong>4.2.2 or later</strong>) from <a href="https://cran.case.edu/" class="uri">https://cran.case.edu/</a> or, if you prefer, from <a href="https://cloud.r-project.org/" class="uri">https://cloud.r-project.org/</a>, which automatically chooses a fast, nearby mirror for you.</p>
+<ul>
+<li>If you have a pre-existing installation of R and/or RStudio, we highly recommend that you re-install both to get current.</li>
+</ul></li>
+<li><p>Download and install <strong>RStudio Desktop</strong> (Open Source Edition - the free version <strong>2022.12.0+353 or later</strong>) by visiting <a href="https://posit.co/download/rstudio-desktop/#download" class="uri">https://posit.co/download/rstudio-desktop/#download</a>. This will also load everything you need for Quarto.</p></li>
+<li><p>Install some R Packages, <a href="#r-packages-to-install">as detailed below</a>.</p></li>
+<li><p>Install useful <a href="https://github.com/THOMASELOVE/432-data">R Data, Quarto Templates and Code</a>, provided by Professor Love at <a href="https://github.com/THOMASELOVE/432-data">our 432-data website</a>.</p></li>
+</ol>
+</section>
+<section id="r-packages-to-install" class="level1">
+<h1>R Packages to Install</h1>
+<p>An R “package” is a collection of functions, data, and documentation that extends the capabilities of R, and is the critical way to get R doing interesting work. These package instructions should be used after you’ve installed R and RStudio. We may add packages to this list as the semester continues.</p>
 <ol type="1">
 <li>Open RStudio. Copy and paste the following lines of code into the Console window of RStudio to install a few key packages.</li>
 </ol>
@@ -365,26 +384,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Non-CRAN package installation</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"mdsr-book/mdsr"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Skipping install of 'mdsr' from a github remote, the SHA1 (4888d4f9) has not changed since last install.
-  Use `force = TRUE` to force installation</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"countreg"</span>, <span class="at">repos=</span><span class="st">"http://R-Forge.R-project.org"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Installing package into 'C:/Users/thoma/AppData/Local/R/win-library/4.2'
-(as 'lib' is unspecified)</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>package 'countreg' successfully unpacked and MD5 sums checked
-
-The downloaded binary packages are in
-    C:\Users\thoma\AppData\Local\Temp\RtmpoDnK2I\downloaded_packages</code></pre>
-</div>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"mdsr-book/mdsr"</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"countreg"</span>, <span class="at">repos=</span><span class="st">"http://R-Forge.R-project.org"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Execute those lines of code, as well. If you are asked to respond to questions, follow the recommendations provided in the request.</p>
 <ol start="6" type="1">
 <li>Finally, choose File … Quit Session from the top menu.</li>
+</ol>
+<section id="updating-your-r-packages" class="level2">
+<h2 class="anchored" data-anchor-id="updating-your-r-packages">Updating Your R Packages</h2>
+<p>Every once in a while, it’s a good idea to update your R packages. To do so,</p>
+<ol type="1">
+<li>Go to the <strong>Packages</strong> tab on the right side of your RStudio screen, and click on <strong>Update</strong>.</li>
+<li>This will bring up a dialog box. I usually click <strong>Select All</strong>, then click <strong>Install Updates</strong>.</li>
+</ol>
+<ul>
+<li>A popup box may appear, asking “Do you want to install from sources the packages which need compilation?” to which I usually answer <strong>No</strong>. A <strong>Yes</strong> response leads to a slower installation, but can solve problems if you still have them after updating.</li>
+<li>This may take a few minutes. As long as you’re seeing activity in the Console window, things are progressing.</li>
+<li>Eventually, you’ll get a message that “The downloaded source packages are in …” with a directory name. That’s the sign that the updating is done.</li>
+<li>Updating packages is something you’ll do occasionally throughout the semester, mostly when a problem happens.</li>
+</ul>
+<ol start="3" type="1">
+<li>Finally, choose <strong>File … Quit Session</strong> from the top menu, and accept or deny (I usually deny) RStudio’s request to save your workspace. Then close RStudio, and re-open it if you want to do some work.</li>
 </ol>
 </section>
 <section id="the-meta-packages" class="level2">
@@ -409,6 +430,15 @@ The downloaded binary packages are in
 <li>A popup box may appear, asking “Do you want to install from sources the packages which need compilation?” to which I usually answer No.&nbsp;A Yes response leads to a slower installation, but can solve problems if you still have them after updating.</li>
 <li>This may take a few minutes. As long as you’re seeing activity in the Console window, things are progressing.</li>
 <li>Eventually, you’ll get a message that “The downloaded source packages are in …” with a directory name. That’s the sign that the updating is done.</li>
+</ul>
+</section>
+</section>
+<section id="need-installation-help" class="level1">
+<h1>Need Installation Help?</h1>
+<p>If you need more help installing R or R Studio, you might look at <a href="https://stat545.com/install.html">this terrific resource for Installing R and RStudio</a> from Jenny Bryan and the STAT 545 project. These are the people responsible for the great <a href="http://happygitwithr.com/">Happy Git with R</a> project, which will also be worth your time when we are using Git and GitHub.</p>
+<ul>
+<li>If you’re having trouble with installation before our first class, don’t worry too much. The TAs and Professor Love will be available to help once the class gets going.</li>
+<li>Once 432 begins, if you’re having installation problems or problems getting started in R, please consider visiting TA office hours or perhaps asking a question on Campuswire. We want to hear from you!</li>
 </ul>
 
 
