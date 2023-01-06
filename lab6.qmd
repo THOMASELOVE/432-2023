@@ -72,6 +72,11 @@ The modeling approaches we've worked on for count outcomes can be finicky, at le
 3. intense collinearity between two or more of your predictors
 4. coding issues in setting up one or more of the variables.
 
+# Our Best Advice
+
+Review your HTML output file carefully before submission for copy-editing issues (spelling, grammar and syntax.) Even with spell-check in RStudio (just hit F7), it's hard to find errors with these issues in your Quarto file so long as it is running. You really need to look closely at the resulting HTML output.
+
+
 # Session Information
 
 Please display your session information at the end of your submission, as shown below.

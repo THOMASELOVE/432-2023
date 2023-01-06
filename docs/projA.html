@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-01-05">
+<meta name="dcterms.date" content="2023-01-06">
 
 <title>432-2023 - Project A</title>
 <style>
@@ -289,10 +289,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <ul class="collapse">
   <li><a href="#templates" id="toc-templates" class="nav-link" data-scroll-target="#templates">Templates</a></li>
   <li><a href="#working-with-a-partner" id="toc-working-with-a-partner" class="nav-link" data-scroll-target="#working-with-a-partner">Working with a Partner?</a></li>
+  <li><a href="#sanity-checks-and-false-starts" id="toc-sanity-checks-and-false-starts" class="nav-link" data-scroll-target="#sanity-checks-and-false-starts">Sanity Checks and False Starts</a></li>
   </ul></li>
   <li><a href="#choosing-your-data" id="toc-choosing-your-data" class="nav-link" data-scroll-target="#choosing-your-data">Choosing Your Data</a>
   <ul class="collapse">
-  <li><a href="#what-makes-a-data-set-acceptable" id="toc-what-makes-a-data-set-acceptable" class="nav-link" data-scroll-target="#what-makes-a-data-set-acceptable">What Makes a Data Set Acceptable?</a></li>
+  <li><a href="#what-makes-a-data-set-acceptable" id="toc-what-makes-a-data-set-acceptable" class="nav-link" data-scroll-target="#what-makes-a-data-set-acceptable">What Makes a Data Set Acceptable?</a>
+  <ul class="collapse">
+  <li><a href="#no-hierarchical-data" id="toc-no-hierarchical-data" class="nav-link" data-scroll-target="#no-hierarchical-data">No hierarchical data</a></li>
+  <li><a href="#joining-multiple-data-sets" id="toc-joining-multiple-data-sets" class="nav-link" data-scroll-target="#joining-multiple-data-sets">Joining multiple data sets</a></li>
+  </ul></li>
   <li><a href="#good-data-sets-to-use" id="toc-good-data-sets-to-use" class="nav-link" data-scroll-target="#good-data-sets-to-use">Good Data Sets To Use</a></li>
   <li><a href="#running-a-data-set-past-us-for-project-a" id="toc-running-a-data-set-past-us-for-project-a" class="nav-link" data-scroll-target="#running-a-data-set-past-us-for-project-a">Running a Data Set Past Us for Project A</a></li>
   </ul></li>
@@ -312,6 +317,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#affirmation" id="toc-affirmation" class="nav-link" data-scroll-target="#affirmation">8 Affirmation</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">9 References</a></li>
   </ul></li>
+  <li><a href="#my-best-piece-of-advice" id="toc-my-best-piece-of-advice" class="nav-link" data-scroll-target="#my-best-piece-of-advice">My Best Piece of Advice</a></li>
   </ul></li>
   <li><a href="#the-project-a-portfolio" id="toc-the-project-a-portfolio" class="nav-link" data-scroll-target="#the-project-a-portfolio">The Project A Portfolio</a>
   <ul class="collapse">
@@ -319,13 +325,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#new-section-8.-linear-regression-analyses" id="toc-new-section-8.-linear-regression-analyses" class="nav-link" data-scroll-target="#new-section-8.-linear-regression-analyses">New Section 8. Linear Regression Analyses</a></li>
   <li><a href="#new-section-9.-logistic-regression-analyses" id="toc-new-section-9.-logistic-regression-analyses" class="nav-link" data-scroll-target="#new-section-9.-logistic-regression-analyses">New Section 9. Logistic Regression Analyses</a></li>
   <li><a href="#new-section-10.-discussion" id="toc-new-section-10.-discussion" class="nav-link" data-scroll-target="#new-section-10.-discussion">New Section 10. Discussion</a></li>
+  <li><a href="#most-important-piece-of-advice" id="toc-most-important-piece-of-advice" class="nav-link" data-scroll-target="#most-important-piece-of-advice">Most Important Piece of Advice</a></li>
   </ul></li>
   <li><a href="#the-presentation" id="toc-the-presentation" class="nav-link" data-scroll-target="#the-presentation">The Presentation</a>
   <ul class="collapse">
   <li><a href="#your-audience" id="toc-your-audience" class="nav-link" data-scroll-target="#your-audience">Your Audience</a></li>
   <li><a href="#outline-of-the-presentation" id="toc-outline-of-the-presentation" class="nav-link" data-scroll-target="#outline-of-the-presentation">Outline of the Presentation</a></li>
   </ul></li>
+  <li><a href="#on-p-values-and-statistical-significance" id="toc-on-p-values-and-statistical-significance" class="nav-link" data-scroll-target="#on-p-values-and-statistical-significance">On P values and “statistical significance”</a></li>
   <li><a href="#on-missing-data" id="toc-on-missing-data" class="nav-link" data-scroll-target="#on-missing-data">On Missing Data</a></li>
+  <li><a href="#on-transformations" id="toc-on-transformations" class="nav-link" data-scroll-target="#on-transformations">On Transformations</a>
+  <ul class="collapse">
+  <li><a href="#using-splines-and-other-complex-predictors" id="toc-using-splines-and-other-complex-predictors" class="nav-link" data-scroll-target="#using-splines-and-other-complex-predictors">Using Splines and other Complex Predictors</a></li>
+  <li><a href="#variable-selection" id="toc-variable-selection" class="nav-link" data-scroll-target="#variable-selection">Variable Selection</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -345,7 +358,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">2023-01-05</p>
+      <p class="date">2023-01-06</p>
     </div>
   </div>
   
@@ -355,6 +368,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
+<p>This document will be updated as issues arise and new questions emerge. All deadlines are on the <a href="./calendar.html">Calendar</a>.</p>
 <section id="project-a-overview" class="level1">
 <h1>Project A Overview</h1>
 <p>In Project A, you will be analyzing, presenting and discussing a pair of regression models, specifically a linear regression and a logistic regression, describing a data set (available to the public) that you identify.</p>
@@ -375,6 +389,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>You will need to identify your Project A partner prior to the submission of your Project A Plan.</li>
 <li>If you are working with a partner, all work must be submitted by exactly one of you to <a href="https::/canvas.case.edu">Canvas</a> while the non-reporting partner submits a one-page note to Canvas indicating the members of the partnership and that the partner will submit the work.</li>
 </ul>
+</section>
+<section id="sanity-checks-and-false-starts" class="level2">
+<h2 class="anchored" data-anchor-id="sanity-checks-and-false-starts">Sanity Checks and False Starts</h2>
+<p>Sanity checks are an important part of your programming, but they don’t belong in your final plan, portfolio or presentation. Neither do false starts, and explorations that don’t lead anywhere.</p>
 </section>
 </section>
 <section id="choosing-your-data" class="level1">
@@ -405,11 +423,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>You can examine different candidate predictors for each outcome, or use the same ones in both your linear and logistic regression models.</li>
 <li>Depending on your sample size, you can study more than the minimum number of regression inputs. See specifications below for your <a href="#my-planned-predictors-linear-model">linear</a> and <a href="#my-planned-predictors-logistic-model">logistic</a> models.</li>
 </ul></li>
-<li><strong>No hierarchical data</strong>. In Project A, we require you to study cross-sectional data, where rows indicate subjects and columns indicate variables gathered to describe those subjects at a particular moment in time or space. Do not use “nested” or “longitudinal” data in Project A.
-<ul>
-<li>The singular exception to this rule is that it will usually be acceptable for all inputs to be collected at a single (baseline) time point and both outcomes to be collected at a single future point in time. For example, you could predict systolic blood pressure in 2022 (or whether or not a subject’s systolic blood pressure in 2022 was below 140), based on a set of input variables (likely including systolic blood pressure) all gathered in 2021.</li>
-</ul></li>
 </ol>
+<p>Your data need not be related to health, or medicine, or biology.</p>
+<section id="no-hierarchical-data" class="level3">
+<h3 class="anchored" data-anchor-id="no-hierarchical-data">No hierarchical data</h3>
+<p>In each project this semester, we will require you to study cross-sectional data, where rows indicate subjects and columns indicate variables gathered to describe those subjects at a particular moment in time or space. Do not use “nested” data in Project A.</p>
+<ul>
+<li>One example of hierarchical (nested) data would be a model of patient results that contains measures not just for individual patients but also measures for the providers within which patients are grouped, and also for health systems in which providers are grouped. That wouldn’t work for this project.</li>
+<li>Another example of hierarchical (nested) data would be a model of individual people’s outcomes where the covariates are gathered at the state or county level, as well as at the level of individuals, and again, that doesn’t work for this project.</li>
+<li>The singular exception to the “no hierarchical data” rule is that it will usually be acceptable for all inputs to be collected at a single (baseline) time point and both outcomes to be collected at a single future point in time. For example, you could predict systolic blood pressure in 2022 (or whether or not a subject’s systolic blood pressure in 2022 was below 140), based on a set of input variables (likely including systolic blood pressure) all gathered in 2021.</li>
+</ul>
+</section>
+<section id="joining-multiple-data-sets" class="level3">
+<h3 class="anchored" data-anchor-id="joining-multiple-data-sets">Joining multiple data sets</h3>
+<p>Dr.&nbsp;Love will be especially impressed with a data collection effort that <em>appropriately</em> puts together at least two different data bases, should that be appropriate.</p>
+<p>What we have in mind are the following scenarios:</p>
+<ol type="1">
+<li><p>Multiple data sets describing different variables for the same subjects that can be linked, so that you can build a combined data set with the same subjects but pulling together multiple sources of data, as, for example, the County Health Rankings do each year.</p></li>
+<li><p>Multiple data sets describing different subjects but the same variables, such as different years of a survey, combining, for instance, multiple iterations of NHANES so as to increase the available sample size.</p></li>
+</ol>
+<p>If your project research questions and available data lead to one of these approaches, great. If not, don’t force it.</p>
+<p>This may require you to learn something about the various joining commands, like <code>left_join</code> and <code>inner_join</code> that are highlighted in the Combine Data Sets section on the <a href="https://posit.co/wp-content/uploads/2022/10/data-transformation-1.pdf">Data Transformation Cheat Sheet</a> from <a href="https://posit.co/resources/cheatsheets/">Posit</a>.</p>
+<ul>
+<li>We heartily recommend Garret Grolemund’s YouTube materials on Data Wrangling, for instance <a href="https://www.youtube.com/watch?v=AuBgYDCg1Cg">this Introduction to Data Manipulation</a> which is about combining multiple data sets.</li>
+<li>Another great resource for combining data sets (and most of your other R questions) is the second edition of <a href="https://r4ds.hadley.nz/">R for Data Science</a>, by Wickham and Grolemund.</li>
+</ul>
+</section>
 </section>
 <section id="good-data-sets-to-use" class="level2">
 <h2 class="anchored" data-anchor-id="good-data-sets-to-use">Good Data Sets To Use</h2>
@@ -429,7 +468,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>While data on COVID-19 would be permitted for 432 projects, most of the available data is longitudinal and thus unsuitable for Project A.</li>
 <li>We are not interested in people using NHANES data in Project A, or County Health Rankings data, unless (as indicated above) those County Health Rankings are combined with meaningful additional data sets.</li>
 <li><a href="https://www.kaggle.com/datasets">Kaggle Public Datasets</a> may be permitted, but we discourage this. We will only accept those with really useful variables, no hierarchical structure and strong descriptions of how the data were gathered (which is at best 5% of what’s available on Kaggle). Don’t select a Kaggle data set without running it by us on Campuswire (<a href="#running-a-data-set-past-us-for-project-a">see below</a>) to see if we’re willing to let you use it.</li>
-<li>Don’t type “regression data sets” into Google. That will lead you to data sets we’ve seen before, and don’t want to see again. The data sets posted by the <a href="https://www.lerner.ccf.org/qhs/datasets/">Cleveland Clinic for educational purposes</a> are a poor choice for Project A, since we’ve seen them before.</li>
+<li>You will not be permitted to use data from a textbook or other educational resource for learning statistics, data science or related methods (online or otherwise).
+<ul>
+<li>Examples of such repositories (that are sadly out-of-bounds for this project and for 432 Project B) include the <a href="https://www.lerner.ccf.org/qhs/datasets/">Cleveland Clinic Statistical Education dataset repository</a>, the <a href="https://hbiostat.org/data/">Vanderbilt University Biostatistics Datasets</a>, or the <a href="https://archive.ics.uci.edu/ml/index.php">UCI Machine Learning Repository</a>.</li>
+</ul></li>
+<li>It’s not a great idea to type “regression data sets” into Google - rarely does that lead to an interesting project.</li>
 </ul>
 </section>
 <section id="running-a-data-set-past-us-for-project-a" class="level2">
@@ -458,7 +501,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="title-and-authors" class="level3">
 <h3 class="anchored" data-anchor-id="title-and-authors">Title and Authors</h3>
 <p>Your project should have a meaningful title (not containing the words “432” or “Project” or “Proposal” or “Plan”) but rather something describing your actual data and plans.</p>
-<p>Please keep the title to no more than 80 characters, including spaces. You can add a subtitle if you like, but the main title should stand on its own.</p>
+<p>Please keep the main title to no more than 80 characters, including spaces. You can add a subtitle if you like, but the main title should stand on its own. Feel free to focus on one of your two research questions (rather than both) if that’s what’s needed to keep to the 80-character limit.</p>
 </section>
 <section id="r-packages-and-setup" class="level3">
 <h3 class="anchored" data-anchor-id="r-packages-and-setup">R Packages and Setup</h3>
@@ -621,6 +664,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Demonstrate to us that you have at least one categorical input which has between 3 and 6 categories, that will be used as a factor in your modeling, and that has at least 30 observations in each level of the factor. If necessary, you can create such a predictor from a quantitative one, but if you are doing this, remember that only the multi-categorical version of the predictor should be included in your models.</li>
 <li>Demonstrate that the total number of candidate predictors you suggest is no more than <span class="math inline">\(4 + (N_1 - 100)/100\)</span>, rounding down, where <span class="math inline">\(N_1\)</span> is the number of rows with complete outcome data in your tibble.</li>
 </ul>
+<p>You should close this section by briefly specifying your guesses as to the expected direction of relationships between your outcome and your predictors.</p>
 </section>
 </section>
 <section id="logistic-regression-plans" class="level3">
@@ -645,6 +689,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>If you are using some of the same predictors as in your linear regression model, there’s no need to repeat yourself. Simply tell us which variables you’ll use again, and then provide descriptions for any new predictors that did not appear in your plans for the linear model.</li>
 <li>Demonstrate that the total number of candidate predictors you suggest for your logistic regression model is no more than <span class="math inline">\(4 + (N_2 - 100)/100\)</span> predictors, rounded down, where <span class="math inline">\(N_2\)</span> is the number of subjects in the <strong>smaller</strong> of your two outcome groups.</li>
 </ul>
+<p>You should close this section by briefly specifying your guesses as to the expected direction of relationships between your outcome and your predictors.</p>
 </section>
 </section>
 <section id="affirmation" class="level3">
@@ -691,6 +736,10 @@ Package version:
 </div>
 </section>
 </section>
+</section>
+<section id="my-best-piece-of-advice" class="level2">
+<h2 class="anchored" data-anchor-id="my-best-piece-of-advice">My Best Piece of Advice</h2>
+<p>Review your HTML output file carefully before submission for copy-editing issues (spelling, grammar and syntax.) Even with spell-check in RStudio (just hit F7), it’s hard to find errors with these issues in your Quarto file so long as it is running. You really need to look at the resulting HTML output, closely.</p>
 </section>
 </section>
 <section id="the-project-a-portfolio" class="level1">
@@ -850,6 +899,10 @@ Package version:
 </ul>
 <p>Write the Discussion section using complete English sentences and paragraphs, not bullet points.</p>
 </section>
+<section id="most-important-piece-of-advice" class="level2">
+<h2 class="anchored" data-anchor-id="most-important-piece-of-advice">Most Important Piece of Advice</h2>
+<p>As mentioned above, it is crucial to review your HTML output file carefully before submission for copy-editing issues (spelling, grammar and syntax.) Even with spell-check in RStudio (just hit F7), it’s hard to find errors with these issues in your Quarto file so long as it is running. You really need to look at the resulting HTML output, closely.</p>
+</section>
 </section>
 <section id="the-presentation" class="level1">
 <h1>The Presentation</h1>
@@ -896,6 +949,11 @@ Package version:
 </ul>
 </section>
 </section>
+<section id="on-p-values-and-statistical-significance" class="level1">
+<h1>On P values and “statistical significance”</h1>
+<p>You are welcome to include p values in your analyses in either the portfolio or the presentation, but you should demonstrate good statistical practice by not comparing them to <span class="math inline">\(\alpha\)</span> levels to declare things to be important, meaningful, or significant.</p>
+<p><strong>You should not use the words “statistically significant” or any synonyms (like statistically detectable) in any of your Plan or Portfolio materials nor in your presentation.</strong></p>
+</section>
 <section id="on-missing-data" class="level1">
 <h1>On Missing Data</h1>
 <p>For Project A, we generally regard the use of imputation as:</p>
@@ -920,8 +978,37 @@ Package version:
 <li>Can you interpret the coefficients produced by your model appropriately?</li>
 </ol>
 <p>You’ve probably figured out already that questions 4-5 are the most important ones.</p>
+</section>
+<section id="on-transformations" class="level1">
+<h1>On Transformations</h1>
+<p>In Project A, restrict yourself to understandable outcome transformations, and don’t be a slave to the Box-Cox approach, which after all is only designed to help with some very particular issues. The reasonable transformations to consider are <span class="math inline">\(1/y\)</span>, a logarithm of <span class="math inline">\(y\)</span>, the square root of <span class="math inline">\(y\)</span>, or <span class="math inline">\(y^2\)</span>.</p>
+<ul>
+<li>Anything more complicated than that should suggest that you consider a different modeling approach or revision to your outcome.</li>
+<li>There is no point in demonstrating all possible transformations in your final work. Describe the transformation you make and your reason for it, then move on.</li>
+<li>If you use a transformation of an outcome, please back-transform out of that in presenting final prediction results where possible, perhaps in a nomogram or a demonstration of what the model predicts for a pair of fictional subjects like “Harry and Sally.”</li>
+</ul>
+<section id="using-splines-and-other-complex-predictors" class="level2">
+<h2 class="anchored" data-anchor-id="using-splines-and-other-complex-predictors">Using Splines and other Complex Predictors</h2>
+<blockquote class="blockquote">
+<p>How should I describe a restricted cubic spline that I’ve fit in a model? Do I write out that equation with the variablename’ and variablename’’ in it, or … ?</p>
+</blockquote>
+<p>Tell us how many knots were involved and show a graph that depicts the impact of the spline.</p>
+<ul>
+<li>No one explains splines without a graph.</li>
+</ul>
+<p>Make a graph and use it is excellent advice for many aspects of your presentation. Sensible graphs to accomplish this task in a multivariate regression model include the <code>ggplot</code> with <code>Predict</code> combination, the <code>plot(summary())</code> approach, and/or a nomogram.</p>
+</section>
+<section id="variable-selection" class="level2">
+<h2 class="anchored" data-anchor-id="variable-selection">Variable Selection</h2>
+<blockquote class="blockquote">
+<p>What is the best way to select an appropriate set of predictors?</p>
+</blockquote>
+<p>It depends in part on the kind of question you are trying to answer. For most projects, I recommend a question that is explicitly about prediction, rather than either (a) trying to explain a phenomenon in existing data without reference to external prediction or (b) trying to make some sort of causal inference, which requires methods beyond the scope of this class.</p>
+<p>What I would always try to do is start with a question I want to answer, which should motivate specific predictors. A combination of logic, theory and prior empirical evidence is always preferable. A scan of the literature is always useful. A conceptual model of the relationship which makes predictions about what “should” happen under current understanding can be very helpful. I strongly urge you to pick a project where you have some prior understanding of how the data will behave and where you can express that pre-modeling belief as part of your presentation of your work.</p>
+<p>What I would definitely not do is scan a list of correlations in the current data to see which ones look promising, and then forget that I did that when it came time to evaluate the models I developed. It’s fine to go on a fishing expedition here, but then you have to severely temper your claims, and in particular you have to give up on drawing any substantial conclusions about causation or explanation and focus instead on a question about prediction, and (of course) validation of your model becomes essential.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

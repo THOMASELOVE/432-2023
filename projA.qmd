@@ -3,6 +3,8 @@ title: "Project A"
 date: last-modified
 ---
 
+This document will be updated as issues arise and new questions emerge. All deadlines are on the [Calendar](calendar.qmd).
+
 # Project A Overview
 
 In Project A, you will be analyzing, presenting and discussing a pair of regression models, specifically a linear regression and a logistic regression, describing a data set (available to the public) that you identify.
@@ -25,16 +27,15 @@ You can choose either to work alone, or with one other person, to complete Proje
 - You will need to identify your Project A partner prior to the submission of your Project A Plan.
 - If you are working with a partner, all work must be submitted by exactly one of you to [Canvas](https::/canvas.case.edu) while the non-reporting partner submits a one-page note to Canvas indicating the members of the partnership and that the partner will submit the work.
 
+## Sanity Checks and False Starts
+
+Sanity checks are an important part of your programming, but they don't belong in your final plan, portfolio or presentation. Neither do false starts, and explorations that don't lead anywhere.
+
 # Choosing Your Data
 
 ## What Makes a Data Set Acceptable?
 
-1.  **Shared with the World**. The data must be available to you, and
-    shared with me and everyone else in the world (without any
-    identifying information) as a well-tidied file by the time you submit your Project A Plan.
-    If the data is from another source, the source (web or other) must
-    be completely identified to me. Ongoing projects that require
-    anyone’s approval to share data are not appropriate for Project A.
+1.  **Shared with the World**. The data must be available to you, and shared with me and everyone else in the world (without any identifying information) as a well-tidied file by the time you submit your Project A Plan. If the data is from another source, the source (web or other) must be completely identified to me. Ongoing projects that require anyone’s approval to share data are not appropriate for Project A.
     -   You should have the data in R by 2023-02-01, so that you will
         have sufficient time to complete the other elements of this
         Plan. Any data you cannot have by that time is a bad choice.
@@ -76,8 +77,33 @@ You can choose either to work alone, or with one other person, to complete Proje
         or use the same ones in both your linear and logistic regression
         models.
     -   Depending on your sample size, you can study more than the minimum number of regression inputs. See specifications below for your [linear](#my-planned-predictors-linear-model) and [logistic](#my-planned-predictors-logistic-model) models.
-5.  **No hierarchical data**. In Project A, we require you to study cross-sectional data, where rows indicate subjects and columns indicate variables gathered to describe those subjects at a particular moment in time or space. Do not use “nested” or “longitudinal” data in Project A.
-    -   The singular exception to this rule is that it will usually be acceptable for all inputs to be collected at a single (baseline) time point and both outcomes to be collected at a single future point in time. For example, you could predict systolic blood pressure in 2022 (or whether or not a subject’s systolic blood pressure in 2022 was below 140), based on a set of input variables (likely including systolic blood pressure) all gathered in 2021.
+
+Your data need not be related to health, or medicine, or biology.
+
+### No hierarchical data
+
+In each project this semester, we will require you to study cross-sectional data, where rows indicate subjects and columns indicate variables gathered to describe those subjects at a particular moment in time or space. Do not use "nested" data in Project A.
+
+- One example of hierarchical (nested) data would be a model of patient results that contains measures not just for individual patients but also measures for the providers within which patients are grouped, and also for health systems in which providers are grouped. That wouldn't work for this project.
+- Another example of hierarchical (nested) data would be a model of individual people's outcomes where the covariates are gathered at the state or county level, as well as at the level of individuals, and again, that doesn't work for this project.
+- The singular exception to the "no hierarchical data" rule is that it will usually be acceptable for all inputs to be collected at a single (baseline) time point and both outcomes to be collected at a single future point in time. For example, you could predict systolic blood pressure in 2022 (or whether or not a subject’s systolic blood pressure in 2022 was below 140), based on a set of input variables (likely including systolic blood pressure) all gathered in 2021.
+
+### Joining multiple data sets
+
+Dr. Love will be especially impressed with a data collection effort that *appropriately* puts together at least two different data bases, should that be appropriate.
+
+What we have in mind are the following scenarios:
+
+1. Multiple data sets describing different variables for the same subjects that can be linked, so that you can build a combined data set with the same subjects but pulling together multiple sources of data, as, for example, the County Health Rankings do each year.
+
+2. Multiple data sets describing different subjects but the same variables, such as different years of a survey, combining, for instance, multiple iterations of NHANES so as to increase the available sample size.
+
+If your project research questions and available data lead to one of these approaches, great. If not, don't force it.
+
+This may require you to learn something about the various joining commands, like `left_join` and `inner_join` that are highlighted in the Combine Data Sets section on the [Data Transformation Cheat Sheet](https://posit.co/wp-content/uploads/2022/10/data-transformation-1.pdf) from [Posit](https://posit.co/resources/cheatsheets/). 
+
+- We heartily recommend Garret Grolemund's YouTube materials on Data Wrangling, for instance [this Introduction to Data Manipulation](https://www.youtube.com/watch?v=AuBgYDCg1Cg) which is about combining multiple data sets.
+- Another great resource for combining data sets (and most of your other R questions) is the second edition of [R for Data Science](https://r4ds.hadley.nz/), by Wickham and Grolemund.
 
 ## Good Data Sets To Use
 
@@ -97,7 +123,9 @@ Some sources of data we’d like to see people use include:
 -   While data on COVID-19 would be permitted for 432 projects, most of the available data is longitudinal and thus unsuitable for Project A.
 -   We are not interested in people using NHANES data in Project A, or County Health Rankings data, unless (as indicated above) those County Health Rankings are combined with meaningful additional data sets.
 - [Kaggle Public Datasets](https://www.kaggle.com/datasets) may be permitted, but we discourage this. We will only accept those with really useful variables, no hierarchical structure and strong descriptions of how the data were gathered (which is at best 5% of what’s available on Kaggle). Don’t select a Kaggle data set without running it by us on Campuswire ([see below](#running-a-data-set-past-us-for-project-a)) to see if we’re willing to let you use it.
--   Don’t type “regression data sets” into Google. That will lead you to data sets we’ve seen before, and don’t want to see again. The data sets posted by the [Cleveland Clinic for educational purposes](https://www.lerner.ccf.org/qhs/datasets/) are a poor choice for Project A, since we’ve seen them before.
+- You will not be permitted to use data from a textbook or other educational resource for learning statistics, data science or related methods (online or otherwise). 
+    - Examples of such repositories (that are sadly out-of-bounds for this project and for 432 Project B) include the [Cleveland Clinic Statistical Education dataset repository](https://www.lerner.ccf.org/qhs/datasets/), the [Vanderbilt University Biostatistics Datasets](https://hbiostat.org/data/), or the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php).
+- It's not a great idea to type “regression data sets” into Google - rarely does that lead to an interesting project. 
 
 ## Running a Data Set Past Us for Project A
 
@@ -126,7 +154,7 @@ The Project A plan consists of:
 
 Your project should have a meaningful title (not containing the words "432" or "Project" or "Proposal" or "Plan") but rather something describing your actual data and plans.
 
-Please keep the title to no more than 80 characters, including spaces. You can add a subtitle if you like, but the main title should stand on its own.
+Please keep the main title to no more than 80 characters, including spaces. You can add a subtitle if you like, but the main title should stand on its own. Feel free to focus on one of your two research questions (rather than both) if that's what's needed to keep to the 80-character limit.
 
 ### R Packages and Setup
 
@@ -252,6 +280,8 @@ Now, tell us precisely which four (or more) candidate predictors (inputs) you in
 - Demonstrate to us that you have at least one categorical input which has between 3 and 6 categories, that will be used as a factor in your modeling, and that has at least 30 observations in each level of the factor. If necessary, you can create such a predictor from a quantitative one, but if you are doing this, remember that only the multi-categorical version of the predictor should be included in your models.
 - Demonstrate that the total number of candidate predictors you suggest is no more than $4 + (N_1 - 100)/100$, rounding down, where $N_1$ is the number of rows with complete outcome data in your tibble.
 
+You should close this section by briefly specifying your guesses as to the expected direction of relationships between your outcome and your predictors.
+
 ### 7 Logistic Regression Plans
 
 #### 7.1 My Second Research Question
@@ -274,6 +304,8 @@ Now, tell us precisely which four (or more) candidate predictors you intend to u
 - If you are using some of the same predictors as in your linear regression model, there’s no need to repeat yourself. Simply tell us which variables you’ll use again, and then provide descriptions for any new predictors that did not appear in your plans for the linear model.
 - Demonstrate that the total number of candidate predictors you suggest for your logistic regression model is no more than $4 + (N_2 - 100)/100$ predictors, rounded down, where $N_2$ is the number of subjects in the **smaller** of your two outcome groups.
 
+You should close this section by briefly specifying your guesses as to the expected direction of relationships between your outcome and your predictors.
+
 ### 8 Affirmation
 
 Next you need to affirm that the data set meets all of the project requirements, especially that the data can be shared freely over the internet, and that there is no protected information of any kind involved.
@@ -295,6 +327,10 @@ Please provide session information by running `xfun::session_info()`.
 ```{r}
 xfun::session_info()
 ```
+
+## My Best Piece of Advice
+
+Review your HTML output file carefully before submission for copy-editing issues (spelling, grammar and syntax.) Even with spell-check in RStudio (just hit F7), it's hard to find errors with these issues in your Quarto file so long as it is running. You really need to look at the resulting HTML output, closely.
 
 # The Project A Portfolio
 
@@ -478,6 +514,10 @@ Next, provide a short (somewhere in the neighborhood of 200 words) discussion of
 
 Write the Discussion section using complete English sentences and paragraphs, not bullet points.
 
+## Most Important Piece of Advice
+
+As mentioned above, it is crucial to review your HTML output file carefully before submission for copy-editing issues (spelling, grammar and syntax.) Even with spell-check in RStudio (just hit F7), it's hard to find errors with these issues in your Quarto file so long as it is running. You really need to look at the resulting HTML output, closely.
+
 # The Presentation
 
 You (with your partner, if you have one) will build and record a single
@@ -564,6 +604,12 @@ portfolio.
 -   Developing the presentation is where **you** have to make decisions
     about what’s most important to show an audience to get them
     interested in your work. That’s a critically important skill.
+
+# On P values and "statistical significance"
+
+You are welcome to include p values in your analyses in either the portfolio or the presentation, but you should demonstrate good statistical practice by not comparing them to $\alpha$ levels to declare things to be important, meaningful, or significant. 
+
+**You should not use the words "statistically significant" or any synonyms (like statistically detectable) in any of your Plan or Portfolio materials nor in your presentation.** 
     
 # On Missing Data
 
@@ -586,4 +632,32 @@ The five key questions we’ll be asking ourselves when evaluating your Project 
 5.  Can you interpret the coefficients produced by your model appropriately?
 
 You’ve probably figured out already that questions 4-5 are the most important ones.
+
+# On Transformations
+
+In Project A, restrict yourself to understandable outcome transformations, and don't be a slave to the Box-Cox approach, which after all is only designed to help with some very particular issues. The reasonable transformations to consider are $1/y$, a logarithm of $y$, the square root of $y$, or $y^2$. 
+
+- Anything more complicated than that should suggest that you consider a different modeling approach or revision to your outcome.
+- There is no point in demonstrating all possible transformations in your final work. Describe the transformation you make and your reason for it, then move on. 
+- If you use a transformation of an outcome, please back-transform out of that in presenting final prediction results where possible, perhaps in a nomogram or a demonstration of what the model predicts for a pair of fictional subjects like "Harry and Sally." 
+
+## Using Splines and other Complex Predictors
+
+> How should I describe a restricted cubic spline that I've fit in a model? Do I write out that equation with the variablename' and variablename'' in it, or ... ?
+
+Tell us how many knots were involved and show a graph that depicts the impact of the spline. 
+
+- No one explains splines without a graph. 
+
+Make a graph and use it is excellent advice for many aspects of your presentation. Sensible graphs to accomplish this task in a multivariate regression model include the `ggplot` with `Predict` combination, the `plot(summary())` approach, and/or a nomogram.
+
+## Variable Selection
+
+> What is the best way to select an appropriate set of predictors?
+
+It depends in part on the kind of question you are trying to answer. For most projects, I recommend a question that is explicitly about prediction, rather than either (a) trying to explain a phenomenon in existing data without reference to external prediction or (b) trying to make some sort of causal inference, which requires methods beyond the scope of this class.
+
+What I would always try to do is start with a question I want to answer, which should motivate specific predictors. A combination of logic, theory and prior empirical evidence is always preferable. A scan of the literature is always useful. A conceptual model of the relationship which makes predictions about what "should" happen under current understanding can be very helpful. I strongly urge you to pick a project where you have some prior understanding of how the data will behave and where you can express that pre-modeling belief as part of your presentation of your work.
+
+What I would definitely not do is scan a list of correlations in the current data to see which ones look promising, and then forget that I did that when it came time to evaluate the models I developed. It's fine to go on a fishing expedition here, but then you have to severely temper your claims, and in particular you have to give up on drawing any substantial conclusions about causation or explanation and focus instead on a question about prediction, and (of course) validation of your model becomes essential.
 

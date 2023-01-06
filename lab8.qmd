@@ -58,6 +58,10 @@ c. (5 points) Compare the coefficients of your `stan` fit for the model to the `
 
 d. (10 points) Comparing the `lm` vs. the `stan` fit for the model you built earlier, assess out-of-sample performance in the testing data using three measures of predictive quality: the correlation-based R-square statistic, the root mean squared error and the mean absolute error. Produce an attractive table of the results for each model. Write a couple of complete English sentences describing your conclusions. 
 
+# Our Best Advice
+
+Review your HTML output file carefully before submission for copy-editing issues (spelling, grammar and syntax.) Even with spell-check in RStudio (just hit F7), it's hard to find errors with these issues in your Quarto file so long as it is running. You really need to look closely at the resulting HTML output.
+
 # Session Information
 
 Please display your session information at the end of your submission, as shown below.

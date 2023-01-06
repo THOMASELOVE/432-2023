@@ -74,6 +74,10 @@ Now, compare the effectiveness of your two fitted models (the "interaction" and 
 
 - The natural choices for validated assessments of fit quality in Question 5 are a bootstrap-validated C statistic and a bootstrap-validated Nagelkerke $R^2$. In the answer sketch, we will use `2023` as our random seed for this work, and we'll use the default amount of bootstrap replications.
 
+# Our Best Advice
+
+Review your HTML output file carefully before submission for copy-editing issues (spelling, grammar and syntax.) Even with spell-check in RStudio (just hit F7), it's hard to find errors with these issues in your Quarto file so long as it is running. You really need to look closely at the resulting HTML output.
+
 # Session Information
 
 Please display your session information at the end of your submission, as shown below.

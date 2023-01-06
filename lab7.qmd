@@ -51,6 +51,11 @@ b. (10 points) Now fit a logistic regression model to predict vital status (`ali
 
 c. (10 points) Using the model you built in Question 2b, estimate the effect of treatment (vs. control) on the odds of being alive at the end of the study. Your odds ratio estimate should compare `treated` to `control`, while adjusting for the effects of `age`, `female` and `comor`. Provide both a point estimate and a 95% confidence interval. Use the format 1.23 (0.78, 1.89) for your response, rounding your estimates to two decimal places. Then interpret your point estimate concisely and correctly in complete English sentences. Be sure to specify the direction of effects correctly in your modeling and your conclusions.
 
+# Our Best Advice
+
+Review your HTML output file carefully before submission for copy-editing issues (spelling, grammar and syntax.) Even with spell-check in RStudio (just hit F7), it's hard to find errors with these issues in your Quarto file so long as it is running. You really need to look closely at the resulting HTML output.
+
+
 # Session Information
 
 Please display your session information at the end of your submission, as shown below.

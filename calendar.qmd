@@ -66,7 +66,7 @@ Link | Date | Details
 Class 21 | TUE <br /> 04-04 | Comparing Survival Curves, Fitting Cox Models
 -- | WED <br /> 04-05 | [Minute Paper](https://github.com/THOMASELOVE/432-minute-2023) after Class 21 due at Noon.
 Class 22 | THU <br /> 04-06 | Fitting Cox Models with `cpm`
--- | MON <br /> 04-10 | [Project B Plan](projB.qmd) due at 9 PM.
+-- | MON <br /> 04-10 | [Project B Proposal Form](projB.qmd) due at 9 PM.
 Class 23 | TUE <br /> 04-11 | Using `tidymodels` approaches to build linear models
 -- | WED <br /> 04-12 | [Minute Paper](https://github.com/THOMASELOVE/432-minute-2023) after Class 23 due at Noon.
 Class 24 | THU <br /> 04-13 | Building Robust Linear Models
@@ -81,8 +81,8 @@ Class 28 | THU <br /> 04-27 | Final Class Session
 
 ## May 2023
 
-- Final Project Presentations (to be scheduled for early May)
-- All course materials, including the [Project B Portfolio](projB.qmd) to be submitted by 12 Noon on 2023-05-09.
+- Final [Project B Presentations](projB.qmd) will be scheduled for early May, concluding 2023-05-08.
+- All course materials, including the [Project B Portfolio](projB.qmd) and the [Project B Self-Evaluation Form](projB.qmd) must be submitted by 12 Noon on 2023-05-09.
 
 
 

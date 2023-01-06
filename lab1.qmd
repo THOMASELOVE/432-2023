@@ -19,6 +19,10 @@ Your response should include a Quarto file (.qmd) and an HTML document that is t
 
 There is a [Lab 1 Quarto template](https://raw.githubusercontent.com/THOMASELOVE/432-data/master/templates/lab1_template.qmd) available on [our 432-data page](https://github.com/THOMASELOVE/432-data). Please use the template to prepare your response to Lab 1, as it will make things easier for you and for the people grading your work.
 
+## Our Best Advice
+
+Review your HTML output file carefully before submission for copy-editing issues (spelling, grammar and syntax.) Even with spell-check in RStudio (just hit F7), it's hard to find errors with these issues in your Quarto file so long as it is running. You really need to look closely at the resulting HTML output.
+
 ## The Data
 
 The `oh_counties_2022.csv` data set I have provided describes a series of variables, pulled from the data for the 88 counties of the the State of Ohio from the [County Health Rankings](http://www.countyhealthrankings.org/rankings/data/oh) report for **2022**. 

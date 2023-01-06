@@ -74,8 +74,9 @@ lasso22 <- lars(predsnew, dat22$outcome, type="lasso")
 plot(lasso22, col=c("royalblue", "red", "black", "navy", "magenta", "brown"), lwd=2, lty=c(2,1,2,1,1))
 ```
 
+# Our Best Advice
 
-
+Review your HTML output file carefully before submission for copy-editing issues (spelling, grammar and syntax.) Even with spell-check in RStudio (just hit F7), it's hard to find errors with these issues in your Quarto file so long as it is running. You really need to look closely at the resulting HTML output.
 
 # Session Information
 
