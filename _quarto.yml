@@ -5,6 +5,8 @@ project:
 website:
   title: "432-2023"
   navbar:
+    background: primary
+    search: true
     left:
       - text: "Home"
         href: index.qmd
@@ -37,7 +39,7 @@ website:
           - quiz1.qmd
           - quiz2.qmd
     right:
-      - text: "Important Links"
+      - text: "Key Links"
         menu: 
         - text: "Campuswire discussion board"
           href: https://campuswire.com/
