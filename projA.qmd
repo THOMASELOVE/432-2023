@@ -148,7 +148,7 @@ The Project A plan consists of:
 
 ## Project A Plan Contents
 
-**Please** use the [Quarto template](#templates) we provided for the Project A Plan in preparing your work.
+**Please** use the [Quarto template](#templates) we provided for the Project A Plan in preparing your work. The list of HTML "themes" that are available in Quarto by changing the "theme" option in the start of your document [can be found here](https://quarto.org/docs/output-formats/html-themes.html) and we encourage you to pick something you think looks nice.
 
 ### Title and Authors
 
