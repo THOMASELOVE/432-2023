@@ -58,5 +58,6 @@ format:
     css: styles.css
     toc: true
     date-format: iso
+    code-overflow: wrap
 
 

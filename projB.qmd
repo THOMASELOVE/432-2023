@@ -163,7 +163,7 @@ If you work as a team, Professor Love will pick one of you at random, on the spo
 - Pre-plan a place where whoever Professor Love chooses to speak first will switch off to the second person so that the time is about even, and you'll both need to be prepared to give either half of the presentation.
 - If you're on Zoom, one of you should plan to be the one who will share their screen for both halves of the presentation, so we don't have to switch back and forth.
 
-You can give your presentation using just your knitted HTML results from R Markdown, or a set of slides you've prepared or any other tools that allow you to show your mastery of 432 material most effectively in the available time. 
+You can give your presentation using just your knitted HTML results from Quarto, or a set of slides you've prepared or any other tools that allow you to show your mastery of 432 material most effectively in the available time. 
   
 - Do not plan to run R code during the session. Your HTML file, for example, must be completely knitted. 
 - Structure your presentation so you can find things very easily. Useful names in the headers help, certainly, but thoughtful construction of an argument and good NAMES for things in your code, and in the headings of your presentation is really the most important thing.
@@ -219,7 +219,7 @@ Review your HTML output file carefully before submission for copy-editing issues
 
 If your data are **available to the public**, including Professor Love, then submit (along with your final portfolio):
 
-- whatever Professor Love needs to provide to the R Markdown file to ingest your data (this is most commonly a .csv file or series of them, but you might instead pull directly from the internet, which is also fine.)
+- whatever Professor Love needs to provide to the Quarto file to ingest your data (this is most commonly a .csv file or series of them, but you might instead pull directly from the internet, which is also fine.)
 - a tidied version of the data set, saved as .Rds, and matching precisely what you describe in your codebook.
 - if the data are available online, you must provide within your HTML file a working URL with instructions to access the data.
 
