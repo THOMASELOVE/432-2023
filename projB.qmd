@@ -28,19 +28,17 @@ The model for your second outcome must use a different approach than you used fo
 
 ## Deliverables
 
-There are four deliverables in Project B: a Proposal Form, an in-person or Zoom Presentation, a Portfolio developed with Quarto ([along with your Data](#submitting-your-data)), and a Self-Evaluation Form.
+There are three deliverables in Project B: a Proposal Form, an in-person or Zoom Presentation, a Portfolio developed with Quarto ([along with your Data](#submitting-your-data)).
 
-1. **Proposal Form** In early April, you will submit a Google Form. 
+1. **Proposal Form** In early April, you will submit the Google Form found at <https://bit.ly/432-2023-projectB-proposal-form>. 
     - In this form, you will specify your title, your research questions, and your data source, and whether or not you are working with a partner.
     - You will also provide a brief description of each of your outcomes, and the type of models you plan to fit. 
     - Finally, you will also specify the times that work for you (and your partner) to give your Project B presentation to Professor Love from a set of times he is available in early May.
     - We will need to approve your Google Form before you proceed further, and this may require some revisions to your plan.
 
-2. **Presentation** After receiving our approval of your submitted form, you will prepare a portfolio of your results with Quarto, and then give an in-person or Zoom presentation of your work to Professor Love in early May. The schedule for these presentations will be resolved after the deadline for the Project B forms. 
+2. **Presentation** After receiving our approval of your submitted form, you will prepare a portfolio of your results with Quarto ([a template is available](#template-for-the-portfolio) for this), and then give an in-person or Zoom presentation of your work to Professor Love in early May. The schedule for these presentations will be determined after completion of the Project B Proposal Form. 
 
-3. **Portfolio and Data** You will then make changes (as needed) to your Quarto document (portfolio) in response to Professor Love's comments during your presentation, and submit the final version of the portfolio along with a version of your data ([as described here](#submitting-your-data)) to [Canvas](https:://canvas.case.edu) by the deadline in the [Calendar](calendar.qmd)
-
-4. **Self-Evaluation Form** You will each complete a self-evaluation of your Project B via a Google Form Professor Love will provide, due at the same time as the portfolio.
+3. **Portfolio and Data** You will then make changes (as needed) to your Quarto document (portfolio) in response to Professor Love's comments during your presentation, and submit the final version of the portfolio along with a version of your data ([as described here](#submitting-your-data)) to [Canvas](https:://canvas.case.edu) by the deadline in the [Calendar](calendar.qmd).
 
 ### Working with a Partner?
 
@@ -50,7 +48,6 @@ If you are working with a partner...
 
   - you will each need to complete the Project B Proposal Form (one of you will provide more details than the other), and
   - you will each participate in the Project B Presentation and the development of the Portfolio, and
-  - you will each complete a (separate) Project B Self-Evaluation Form.
 
 Your final Portfolio and Data will be submitted by exactly one of the two partners to [Canvas](https::/canvas.case.edu) while the non-reporting partner will submit a one-page note to [Canvas](https::/canvas.case.edu) indicating the members of the partnership and that the partner will submit the work.
 
@@ -86,7 +83,7 @@ We want to powerfully discourage you from working with nested data that really r
 
 # The Proposal Form
 
-The Project B Proposal Form (**link to come**) is a Google Form. The form allows you to:
+The Project B Proposal Form is a Google Form found at <https://bit.ly/432-2023-projectB-proposal-form>. The form allows you to:
 
 - register a brief description of your project for our approval, *and* 
 - specify presentation times when you (and your partner if applicable) are available.
@@ -106,10 +103,14 @@ Before you complete the form, please **read this entire document**, settle on yo
 
 ## Signing Up for Presentation Times
 
-Professor Love will make several hour-long time slots available.
+Professor Love intends to hear projects for this course:
 
-- You will specify at least six of these time slots as times when you (and your partner, if any) are available to give your project.
-- The time slots will be scheduled on three different days in early May.
+- Tuesday 2023-05-02 between 9 AM and Noon, and between 12:30 PM and 3:30 PM for in-person or Zoom presentations
+- Wednesday 2023-05-03 between 8 AM and 10 AM and between 4 PM and 6 PM for Zoom presentations
+- Thursday 2023-05-04 between Noon and 3 PM for in-person or Zoom presentations
+- Monday 2023-05-08 between 8 AM and Noon, and between 12:30 PM and 4:30 PM for Zoom presentations
+
+You will specify at least seven one-hour time slots within these windows (using at least two different days) as times when you (and your partner, if any) are available to give your project.
 
 Some people will have special circumstances that make it difficult for them to meet during some of these times. There will be an opportunity on the form for you to provide those details to Professor Love.
 
@@ -337,7 +338,7 @@ All of this should appear in an extremely well-organized presentation and portfo
 
 # Need Help?
 
-Questions about Project B may be directed to the TAs and to Professor Love at any time **after** your submission of the Project A portfolio in March. If you're asking a question [on Campuswire](https://campuswire.com/), please use the `projectb` label, and we encourage you to ask general questions in public rather than privately, so as to get help from other students, and provide help to them.
+Questions about Project B may be directed to the TAs and to Professor Love at any time **after** your submission of the Project A portfolio in March. If you're asking a question [on Campuswire](https://campuswire.com/), please use the `Project B` label, and we encourage you to ask general questions in public rather than privately, so as to get help from other students, and provide help to them.
 
 
 

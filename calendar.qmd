@@ -81,9 +81,14 @@ Class 28 | THU <br /> 04-27 | Final Class Session
 
 ## May 2023
 
-- Final [Project B Presentations](projB.qmd) will be scheduled for early May, concluding 2023-05-08.
-- All course materials, including the [Project B Portfolio](projB.qmd) and the [Project B Self-Evaluation Form](projB.qmd) must be submitted by 12 Noon on 2023-05-09.
+[Project B Presentations](projB.qmd) will be scheduled at the following times:
 
+- Tuesday 2023-05-02 between 9 AM and Noon, and between 12:30 PM and 3:30 PM for in-person or Zoom presentations
+- Wednesday 2023-05-03 between 8 AM and 10 AM and between 4 PM and 6 PM for Zoom presentations
+- Thursday 2023-05-04 between Noon and 3 PM for in-person or Zoom presentations
+- Monday 2023-05-08 between 8 AM and Noon, and between 12:30 PM and 4:30 PM for Zoom presentations
+
+All remaining course materials, including the [Project B Portfolio](projB.qmd) are to be submitted no later than **12 Noon on Tuesday 2023-05-09**.
 
 
 

@@ -129,7 +129,7 @@ Some sources of data we’d like to see people use include:
 
 ## Running a Data Set Past Us for Project A
 
-To get Professor Love and the TAs to "sign off" on a data set as appropriate for your Project A Plan, you need to tell us the following four things in a (private or public - your choice) note on [Campuswire](https://campuswire.com/) in the projectA folder. Please do this if you’re not sure your data set is appropriate.
+To get Professor Love and the TAs to "sign off" on a data set as appropriate for your Project A Plan, you need to tell us the following four things in a (private or public - your choice) note on [Campuswire](https://campuswire.com/) in the `Project A` folder. Please do this if you’re not sure your data set is appropriate.
 
 1.  the data source, as [described here](#data-source), along with a URL so we can access the data
 2.  a description of who the subjects are and how they were selected, as [described here](#the-subjects) - it helps if you also tell us how many subjects are in the data.
@@ -660,4 +660,8 @@ It depends in part on the kind of question you are trying to answer. For most pr
 What I would always try to do is start with a question I want to answer, which should motivate specific predictors. A combination of logic, theory and prior empirical evidence is always preferable. A scan of the literature is always useful. A conceptual model of the relationship which makes predictions about what "should" happen under current understanding can be very helpful. I strongly urge you to pick a project where you have some prior understanding of how the data will behave and where you can express that pre-modeling belief as part of your presentation of your work.
 
 What I would definitely not do is scan a list of correlations in the current data to see which ones look promising, and then forget that I did that when it came time to evaluate the models I developed. It's fine to go on a fishing expedition here, but then you have to severely temper your claims, and in particular you have to give up on drawing any substantial conclusions about causation or explanation and focus instead on a question about prediction, and (of course) validation of your model becomes essential.
+
+# Need Help?
+
+Questions about Project A may be directed to the TAs and to Professor Love at any time after the start of the course. If you're asking a question [on Campuswire](https://campuswire.com/), please use the `Project A` label, and we encourage you to ask general questions in public rather than privately, so as to get help from other students, and provide help to them.
 

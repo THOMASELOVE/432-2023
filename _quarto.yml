@@ -16,7 +16,7 @@ website:
         href: notes.qmd
       - text: "Software"
         href: software.qmd
-      - text: "Data & Code"
+      - text: "Get Data"
         href: https://github.com/THOMASELOVE/432-data
       - text: "Labs"
         menu: 
