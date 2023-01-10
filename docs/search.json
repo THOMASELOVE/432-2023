@@ -207,7 +207,7 @@
     "href": "notes.html",
     "title": "432 Course Notes",
     "section": "",
-    "text": "The old version of the course notes (built in February 2022) is posted to https://thomaselove.github.io/432-notes/.\nRevisions are underway.\nIf you have a question at this time, send it by email to Dr. Love at thomas dot love at case dot edu."
+    "text": "Revisions are underway, and a version of the course notes will be available before class begins.\nIf you have a question at this time, send it by email to Dr. Love at thomas dot love at case dot edu."
   },
   {
     "objectID": "projA.html",
@@ -459,7 +459,7 @@
     "href": "software.html#updating-your-r-packages",
     "title": "Software for 432",
     "section": "Updating Your R Packages",
-    "text": "Updating Your R Packages\nEvery once in a while, it’s a good idea to update your R packages. To do so,\n\nGo to the Packages tab on the right side of your RStudio screen, and click on Update.\nThis will bring up a dialog box. I usually click Select All, then click Install Updates.\n\n\nA popup box may appear, asking “Do you want to install from sources the packages which need compilation?” to which I usually answer No. A Yes response leads to a slower installation, but can solve problems if you still have them after updating.\nThis may take a few minutes. As long as you’re seeing activity in the Console window, things are progressing.\nEventually, you’ll get a message that “The downloaded source packages are in …” with a directory name. That’s the sign that the updating is done.\nUpdating packages is something you’ll do occasionally throughout the semester, mostly when a problem happens.\n\n\nFinally, choose File … Quit Session from the top menu, and accept or deny (I usually deny) RStudio’s request to save your workspace. Then close RStudio, and re-open it if you want to do some work."
+    "text": "Updating Your R Packages\nAbout twice a month, it’s a good idea to update your R packages. To do so, follow steps 3 and 4 above."
   },
   {
     "objectID": "software.html#the-meta-packages",
